@@ -88,6 +88,10 @@
 			<a href="/gallery" class="menu-item-gallery">相册</a>
 		</li>
 	
+		<li class="menu-emoji">
+			<a href="/emoji" class="menu-item-emoji">emoji</a>
+		</li>
+	
 
 	
 		<li class="menu-search">
@@ -205,6 +209,10 @@
 			<a href="/gallery" class="menu-item-gallery">相册</a>
 		</li>
 	
+		<li class="menu-emoji">
+			<a href="/emoji" class="menu-item-emoji">emoji</a>
+		</li>
+	
 
 	
 		<li class="menu-search">
@@ -295,7 +303,22 @@
 				<p class="post-meta">
 					
 
+	
+    <span class="leancloud_visitors" id="/2018/09/11/hello-world/_visitors" data-url="/2018/09/11/hello-world/" data-title="Hello World">
+       	<i class="fa fa-eye"></i>
+       	热度
+        <i class="leancloud_visitors_count" id="leancloud_visitors_count">0</i>
+    </span>
+    
 
+
+
+	
+    <span class="leancloud_likes" id="/2018/09/11/hello-world/_likes" data-url="/2018/09/11/hello-world/" data-title="Hello World" rel="unlike">
+        <i class="fa fa-heart"></i>
+        喜欢
+        <i class="leancloud_likes_count" id="leancloud_likes_count">0</i>
+    </span>
 
 					
 
@@ -318,6 +341,14 @@
 				参考了01 & 02进行简单的设计与实现
 -->
 
+
+
+	<script>
+		var appid = 'x6Q1ckuYbj4gtQrWGrQuj0xy-gzGzoHsz',
+            appkey = '80lQN6wUfwukWwhkh9Ojly0j';	  
+        AnnieLeancloud(appid, appkey);         
+	</script>
+    
 
 	
 
@@ -353,7 +384,22 @@
 				<p class="post-meta">
 					
 
+	
+    <span class="leancloud_visitors" id="/2018/06/08/毕业/_visitors" data-url="/2018/06/08/毕业/" data-title="毕业">
+       	<i class="fa fa-eye"></i>
+       	热度
+        <i class="leancloud_visitors_count" id="leancloud_visitors_count">0</i>
+    </span>
+    
 
+
+
+	
+    <span class="leancloud_likes" id="/2018/06/08/毕业/_likes" data-url="/2018/06/08/毕业/" data-title="毕业" rel="unlike">
+        <i class="fa fa-heart"></i>
+        喜欢
+        <i class="leancloud_likes_count" id="leancloud_likes_count">0</i>
+    </span>
 
 					
 
@@ -376,6 +422,14 @@
 				参考了01 & 02进行简单的设计与实现
 -->
 
+
+
+	<script>
+		var appid = 'x6Q1ckuYbj4gtQrWGrQuj0xy-gzGzoHsz',
+            appkey = '80lQN6wUfwukWwhkh9Ojly0j';	  
+        AnnieLeancloud(appid, appkey);         
+	</script>
+    
 
 	
 
@@ -513,6 +567,23 @@
 		<div class="local-search-footer">
 			<div class="topN-post">				
 				
+
+   
+	<div id="topN">
+		<div class="topN-title" data-title= "热门文章"></div> 
+	</div>
+	
+    <script>
+        var appid = 'x6Q1ckuYbj4gtQrWGrQuj0xy-gzGzoHsz',
+            appkey = '80lQN6wUfwukWwhkh9Ojly0j',
+            limitCount = 10;
+        if( $('#topN').length ){
+            AV.initialize(appid, appkey);
+            var Counter = AV.Object.extend("Counter");  
+            topNPost(Counter, limitCount);
+        }
+    </script>
+   
 								
 			</div>
 		</div>

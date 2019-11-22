@@ -88,6 +88,10 @@
 			<a href="/gallery" class="menu-item-gallery">相册</a>
 		</li>
 	
+		<li class="menu-emoji">
+			<a href="/emoji" class="menu-item-emoji">emoji</a>
+		</li>
+	
 
 	
 		<li class="menu-search">
@@ -203,6 +207,10 @@
 	
 		<li class="menu-gallery">
 			<a href="/gallery" class="menu-item-gallery">相册</a>
+		</li>
+	
+		<li class="menu-emoji">
+			<a href="/emoji" class="menu-item-emoji">emoji</a>
 		</li>
 	
 
@@ -347,7 +355,22 @@
 		
 		
 
+	
+    <span class="leancloud_visitors" id="/2018/09/29/定制ListView界面/_visitors" data-url="/2018/09/29/定制ListView界面/" data-title="定制ListView界面">
+       	<i class="fa fa-eye"></i>
+       	热度
+        <i class="leancloud_visitors_count" id="leancloud_visitors_count">0</i>
+    </span>
+    
 
+
+
+	
+    <span class="leancloud_likes" id="/2018/09/29/定制ListView界面/_likes" data-url="/2018/09/29/定制ListView界面/" data-title="定制ListView界面" rel="unlike">
+        <i class="fa fa-heart"></i>
+        喜欢
+        <i class="leancloud_likes_count" id="leancloud_likes_count">0</i>
+    </span>
 
 	</div>
 
@@ -513,7 +536,7 @@ Bash指令
 Incorrect Password!
 No content to display!
 
-U2FsdGVkX19LQOGJZMAVwgKf92pvv/QVtowItBusP...
+U2FsdGVkX1/MWuXyNRalxQEQm5pik9DIyMiWwKNC2...
 							</p>
 						</div>
 
@@ -666,7 +689,7 @@ U2FsdGVkX19LQOGJZMAVwgKf92pvv/QVtowItBusP...
 Incorrect Password!
 No content to display!
 
-U2FsdGVkX1+a3xN4YiJgQ7XQN4Gb0Cwy7ErMwrXfX...
+U2FsdGVkX1++WoqfxfEkqCqR8nbZ2XSdymd1tjS++...
 							</p>
 						</div>
 
@@ -746,6 +769,14 @@ U2FsdGVkX1+a3xN4YiJgQ7XQN4Gb0Cwy7ErMwrXfX...
 				参考了01 & 02进行简单的设计与实现
 -->
 
+
+
+	<script>
+		var appid = 'x6Q1ckuYbj4gtQrWGrQuj0xy-gzGzoHsz',
+            appkey = '80lQN6wUfwukWwhkh9Ojly0j';	  
+        AnnieLeancloud(appid, appkey);         
+	</script>
+    
 
 	
 
@@ -990,6 +1021,23 @@ U2FsdGVkX1+a3xN4YiJgQ7XQN4Gb0Cwy7ErMwrXfX...
 		<div class="local-search-footer">
 			<div class="topN-post">				
 				
+
+   
+	<div id="topN">
+		<div class="topN-title" data-title= "热门文章"></div> 
+	</div>
+	
+    <script>
+        var appid = 'x6Q1ckuYbj4gtQrWGrQuj0xy-gzGzoHsz',
+            appkey = '80lQN6wUfwukWwhkh9Ojly0j',
+            limitCount = 10;
+        if( $('#topN').length ){
+            AV.initialize(appid, appkey);
+            var Counter = AV.Object.extend("Counter");  
+            topNPost(Counter, limitCount);
+        }
+    </script>
+   
 								
 			</div>
 		</div>

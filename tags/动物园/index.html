@@ -88,6 +88,10 @@
 			<a href="/gallery" class="menu-item-gallery">相册</a>
 		</li>
 	
+		<li class="menu-emoji">
+			<a href="/emoji" class="menu-item-emoji">emoji</a>
+		</li>
+	
 
 	
 		<li class="menu-search">
@@ -203,6 +207,10 @@
 	
 		<li class="menu-gallery">
 			<a href="/gallery" class="menu-item-gallery">相册</a>
+		</li>
+	
+		<li class="menu-emoji">
+			<a href="/emoji" class="menu-item-emoji">emoji</a>
 		</li>
 	
 
@@ -845,6 +853,23 @@
 		<div class="local-search-footer">
 			<div class="topN-post">				
 				
+
+   
+	<div id="topN">
+		<div class="topN-title" data-title= "热门文章"></div> 
+	</div>
+	
+    <script>
+        var appid = 'x6Q1ckuYbj4gtQrWGrQuj0xy-gzGzoHsz',
+            appkey = '80lQN6wUfwukWwhkh9Ojly0j',
+            limitCount = 10;
+        if( $('#topN').length ){
+            AV.initialize(appid, appkey);
+            var Counter = AV.Object.extend("Counter");  
+            topNPost(Counter, limitCount);
+        }
+    </script>
+   
 								
 			</div>
 		</div>
