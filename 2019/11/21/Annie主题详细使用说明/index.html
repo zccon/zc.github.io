@@ -1,0 +1,1268 @@
+<!--
+	作者：Sariay
+	时间：2018-09-25
+	描述：There may be a bug, but don't worry, QiLing(器灵) says that it can work normally!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+      Annie主题详细使用说明 | zccon&#39;s blog
+    
+  </title>
+  <meta name="author" content="zccon">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/img/Logo/favicon.ico">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/Annie.css">
+  
+  <!-- jquery -->
+	<script src="/js/jquery.min.js"></script>
+
+  <!-- leancloud -->
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+<script src="/js/leancloud.js"></script>
+</head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground" data-img-mode="normal" data-normal-src="/img/CoverDefault/1.jpg" data-random-max="110" data-random-src="https://sariay.github.io/Random-img/">
+	<div class="mask">
+		<!-- Logo and navigation -->
+		<div class="h-header">
+			<div id="logo">
+				<a href="/">
+					
+						Welcome
+					
+				</a>
+			</div>
+			
+			<div id="navigation-show">
+				<ul>
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home">主页</a>
+		</li>
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive">归档</a>
+		</li>
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories">分类</a>
+		</li>
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags">标签</a>
+		</li>
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about">关于</a>
+		</li>
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery">相册</a>
+		</li>
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
+	
+</ul>
+			</div>				
+		</div>
+
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<p class="motto"></p>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more"><i class="fa fa-angle-double-down" aria-hidden="true"></i>
+			</a>
+
+			
+				<!-- 
+	This is only a demo, please go to "https://time.is" to set your city time! 
+-->
+<style type="text/css">
+	.header-date {
+		font-size: 1.6rem;
+		color: #fff;
+		position: absolute;
+		bottom: 5px;
+		right: 1rem;
+		writing-mode: tb-rl;
+	}	
+	
+	.header-date a {
+		border-bottom: none;
+	}
+
+	@media only screen and (max-width: 768 ) {
+		.header-date {
+			font-size: 1rem;
+		}			
+	}
+</style>
+<div class="header-date">
+	<a href="https://time.is/Beijing" id="time_is_link" rel="nofollow" ></a>
+	<span id="Beijing_z43d"></span>
+</div>
+<script src="//widget.time.is/zh.js"></script>
+<script>
+	time_is_widget.init({
+		Beijing_z43d:{
+			template:"DATE", 
+			date_format:"year年 monthname dnum日"
+		}
+	});
+</script>
+			
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><h1>0.0%</h1></div>
+
+	<div class="toc-switch"><span class="switch-button">目录</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			当前文章&nbsp;:&nbsp;《Annie主题详细使用说明》
+		
+	</p>
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<h3>Navigation</h3>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	<div class="nav-body">
+		<ul>
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home">主页</a>
+		</li>
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive">归档</a>
+		</li>
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories">分类</a>
+		</li>
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags">标签</a>
+		</li>
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about">关于</a>
+		</li>
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery">相册</a>
+		</li>
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
+	
+</ul>
+	</div>
+	<div class="nav-footer">
+		<ul>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-github"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-weibo"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-pinterest"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-instagram"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-twitter"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<i class="fa fa-rss"></i>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			<!--
+	时间：2018-11-17
+	描述：
+		插件名称：katelog.min.js
+		插件作者：KELEN
+		插件来源: https://github.com/KELEN/katelog
+-->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+			</div>
+		</div>
+
+		
+		<script src="/plugin/toc/katelog.min.js"></script>
+
+		
+	 
+
+<div class="layout-post">
+	<div id="layout-post">
+	<div class="article-title">
+		<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+		
+	<a href="/2019/11/21/Annie主题详细使用说明/" itemprop="url">
+		Annie主题详细使用说明
+	</a>
+
+	</div>
+
+	<div class="article-meta">
+		<span>
+			<i class="fa fa-calendar"></i>
+			
+
+
+	发布于
+
+	<a href="/2019/11/21/Annie主题详细使用说明/" itemprop="url">
+		<time datetime="2019-11-21T15:16:25.000Z" itemprop="datePublished">
+	  		2019-11-21
+	  </time>
+	</a>
+	&nbsp;
+
+
+
+
+
+			
+
+
+
+
+	更新于
+
+	<a href="/2019/11/21/Annie主题详细使用说明/" itemprop="url">
+		<time datetime="2019-11-21T15:16:25.000Z" itemprop="dateUpdated">
+	  		2019-11-22
+	  </time>
+	</a> 
+
+
+
+		</span>
+		<span>
+			<i class="fa fa-tags"></i>
+			
+	
+		<a href="/tags/主题/" class=" ">
+			主题
+		</a>
+	
+		<a href="/tags/Annie/" class=" ">
+			Annie
+		</a>
+	
+		
+		</span>
+		
+		
+
+
+
+	</div>
+
+	<div class="article-content" id="article-content">
+		<blockquote>
+<p>开始之前的说明</p>
+</blockquote>
+<ol start="0">
+<li><p>文中所有的指令都是在Hexo文件夹下开启的命令行中执行的 </p>
+</li>
+<li><p>代码对比</p>
+</li>
+</ol>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">  This is a diff block.</span><br><span class="line"><span class="addition">+ This is add!</span></span><br><span class="line"><span class="deletion">- This is subtract!</span></span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>Bash指令</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">指令</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>输出信息</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">输出信息</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>提示信息</li>
+</ol>
+<blockquote class="colorquote info"><p>这是一个info提示</p></blockquote>
+
+<blockquote class="colorquote success"><p>这是一个success提示 </p></blockquote>
+
+<blockquote class="colorquote warning"><p>这是一个warning提示</p></blockquote>
+
+<blockquote class="colorquote danger"><p>这是一个danger提示</p></blockquote>
+
+<ol start="5">
+<li>文件目录</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">名词</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">目录</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center"><font color="#ff4444" face="幼圆">站点配置文件</font></td>
+<td style="text-align:center">站点目录下的_config.yml文件</td>
+<td style="text-align:center">Hexo/_config.yml</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center"><font color="#0099ff" face="幼圆">主题配置文件</font></td>
+<td style="text-align:center">主题目录下的_config.yml文件</td>
+<td style="text-align:center">Hexo/themes/Annie/_config.yml</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">文章目录</td>
+<td style="text-align:center">文章.md文件</td>
+<td style="text-align:center">Hexo/source/_posts</td>
+</tr>
+</tbody>
+</table>
+<h1 id="一、LOGO和FAVICON"><a href="#一、LOGO和FAVICON" class="headerlink" title="一、LOGO和FAVICON"></a>一、LOGO和FAVICON</h1><p>编辑<font color="#0099ff" face="幼圆">主题配置文件</font>，设置<code>favicon</code>和<code>logo</code>的路径即可。当然，你可以使用文字logo或图片logo，即logo的值为空时，主题使用<code>title</code>的值作为logo！</p>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># favicon &amp; logo</span><br><span class="line"># if the value of logo is false, the 'title' is optional.</span><br><span class="line"><span class="deletion">- favicon: /img/favicon.ico</span></span><br><span class="line"><span class="deletion">- logo: /img/logo.png</span></span><br><span class="line"><span class="deletion">- title: Welcome </span></span><br><span class="line"><span class="addition">+ favicon: /img/your-favicon.ico</span></span><br><span class="line"><span class="addition">+ logo: /img/your-logo.png</span></span><br><span class="line"><span class="addition">+ title: your-title</span></span><br></pre></td></tr></table></figure>
+<blockquote class="colorquote info"><p>这里的img是指的Hexo/themes/Annie/source/img目录</p></blockquote>
+
+<h1 id="二、页头背景图片"><a href="#二、页头背景图片" class="headerlink" title="二、页头背景图片"></a>二、页头背景图片</h1><p>文章详情页的<strong>页头背景图片</strong>为该文章的封面图，其他页的<strong>页头背景图片</strong>为随机图片或固定图片。<br>原则上:<br>使用固定图片时，应将参数<code>mode</code>设为normal，然后设置<code>normal_url</code>的路径；<br>使用随机图片时，应将参数<code>mode</code>设为random，然后设置<code>random_url</code>的路径。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># background_image</span><br><span class="line"># /img/1.jpg</span><br><span class="line"># https://source.unsplash.com/collection/954550/1920x1080</span><br><span class="line"># https://sariay.github.io/Random-img/</span><br><span class="line"># May be cause CROS bug!</span><br><span class="line">background_image:</span><br><span class="line">    mode: normal #normal or random</span><br><span class="line">    normal_url: /img/1.jpg</span><br><span class="line">    random_max: 110 </span><br><span class="line">    random_url: https://sariay.github.io/Random-img/</span><br></pre></td></tr></table></figure>
+<blockquote class="colorquote warning"><p>注意跨域问题，尽量不使用跨域的图片（即背景图片和网页最好托管在一起，存放于同一服务器）</p></blockquote>
+
+<p>编辑<font color="#0099ff" face="幼圆">主题配置文件</font>，找到<code>background_image</code>标签进行相应设置。</p>
+<ol>
+<li>使用固定图片，请确保参数<code>mode</code>设为normal，然后设置参数<code>normal_url</code>的值</li>
+</ol>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">background_image:</span><br><span class="line"><span class="addition">+   mode: normal #normal or random</span></span><br><span class="line"><span class="addition">+   normal_url: /img/1.jpg</span></span><br><span class="line">    random_max: 110 </span><br><span class="line">    random_url: https://sariay.github.io/Random-img/</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>使用unplash随机图片，请确保参数<code>mode</code>设为normal，然后设置参数<code>normal_url</code>的值</li>
+</ol>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">background_image:</span><br><span class="line"><span class="addition">+   mode: normal #normal or random</span></span><br><span class="line"><span class="addition">+   normal_url: https://source.unsplash.com/collection/954550/1920x1080</span></span><br><span class="line">    random_max: 110 </span><br><span class="line">    random_url: https://sariay.github.io/Random-img/</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>使用自定义随机图片，请确保参数<code>mode</code>设为random，然后设置参数<code>random_max</code>、<code>random_url</code>的值</li>
+</ol>
+<ul>
+<li>第一步、fork <a href="https://github.com/Sariay/Random-img" target="_blank" rel="noopener">随机图片集</a>；</li>
+<li>第二步、开启你所fork的仓库的page服务；</li>
+<li>第三步、获取相对地址；</li>
+<li>第四步、设置random_url为获得的相对地址。</li>
+</ul>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">background_image:</span><br><span class="line"><span class="addition">+   mode: random #normal or random</span></span><br><span class="line">    normal_url: https://source.unsplash.com/collection/954550/1920x1080</span><br><span class="line"><span class="addition">+   random_max: 110 </span></span><br><span class="line"><span class="addition">+   random_url: https://sariay.github.io/Random-img/</span></span><br></pre></td></tr></table></figure>
+<p>你可以将<strong>随机图片集</strong>上传到云（腾讯云、七牛云等），然后获取<strong>https://……/Random-img/</strong>格式的地址，最后将<code>random_url</code>的值设置为该地址。</p>
+<p>你也可以在主题目录下的img文件夹中新建Random-img文件夹，将<strong>0.jpg</strong>、<strong>1.jpg</strong>、<strong>2.jpg</strong>、<strong>3.jpg</strong>……<strong>110.jpg</strong>命名格式的图片放入其中，然后将<code>random_url</code>的值设置为<strong>/img/Random-img/</strong>。</p>
+<blockquote class="colorquote warning"><p>图片的命名使用连续的整数，random_max的值小于等于（0、1、2、3…..110）的最大整数。（ps：如你偏爱访问速度🙃，尽可能使用固定图片）</p></blockquote>
+
+<h1 id="三、随机名言与当地时间"><a href="#三、随机名言与当地时间" class="headerlink" title="三、随机名言与当地时间"></a>三、随机名言与当地时间</h1><p>每次刷新网页，网页页头展示一条随机名言，获取并展示该时区的标准时间。<br><figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># show motto</span><br><span class="line">motto:</span><br><span class="line">    enable: true</span><br><span class="line">    </span><br><span class="line"># show current time</span><br><span class="line"><span class="addition">+ #This is only a demo, please go to "https://time.is" to set your city time!</span></span><br><span class="line">timejs:</span><br><span class="line">    enable: true</span><br></pre></td></tr></table></figure></p>
+<p>编辑<font color="#0099ff" face="幼圆">主题配置文件</font>，设置<code>motto</code>和<code>timejs</code>下的enable为true的参数即可。</p>
+<h1 id="四、预加载遮罩"><a href="#四、预加载遮罩" class="headerlink" title="四、预加载遮罩"></a>四、预加载遮罩</h1><p>预加载遮罩的作用为，确保背景图片加载完成和背景构造完成。当背景加载并构造完成时，主题立即移除遮罩。预加载行为的超时时间默认设为10s，即最多10s左右后，不管背景是否加载并构造完成，主题都移除遮罩。你可以决定是否使用：<br><figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 002-PROLOADER</span><br><span class="line"># animation: spinner | transition | cyclic</span><br><span class="line">preloader:</span><br><span class="line">  + enable: true</span><br><span class="line">  + animation: transition</span><br></pre></td></tr></table></figure></p>
+<p>编辑<font color="#0099ff" face="幼圆">主题配置文件</font>，设置<code>preloader</code>下的enable为true并设置<code>animation</code>参数（spinner, transition or cyclic）。</p>
+<h1 id="五、首页文章展示样式"><a href="#五、首页文章展示样式" class="headerlink" title="五、首页文章展示样式"></a>五、首页文章展示样式</h1><p>首页文章展示有两种模式：图文模式<code>cart</code>和纯净模式<code>pure</code></p>
+<p>编辑<font color="#0099ff" face="幼圆">主题配置文件</font>，设置<code>index_style</code>的参数即可。<br><figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 003-INDEX</span><br><span class="line"># index-style: pure | cart</span><br><span class="line"><span class="addition">+ index_style: cart</span></span><br><span class="line"></span><br><span class="line"># index_cart_cover</span><br><span class="line"><span class="addition">+ cover: /img/cart_cover.jpg</span></span><br><span class="line"><span class="addition">+ lazy_image: /img/placeholder.jpg</span></span><br></pre></td></tr></table></figure></p>
+<blockquote class="colorquote info">未设置图片的文章默认设置cover路径下的图片，文章图片未加载出来时显示lazy_image下的图片</blockquote>
+
+<h2 id="5-1设置文章封面图"><a href="#5-1设置文章封面图" class="headerlink" title="5.1设置文章封面图"></a>5.1设置文章封面图</h2><p>在每篇文章的头部添加<code>cover</code>标签设置每篇文章的背景，路径可为相对路径或绝对路径。<br><figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">---</span></span><br><span class="line">  title: title</span><br><span class="line">  date: 2019-01-01 08:00:00</span><br><span class="line">  tags: [tag1, tag2, tag3]</span><br><span class="line">  categories: Note</span><br><span class="line">  description: </span><br><span class="line">  abstract: </span><br><span class="line"><span class="addition">+ cover: /img/1.jpg</span></span><br><span class="line"><span class="comment">---</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="5-2首页的分页"><a href="#5-2首页的分页" class="headerlink" title="5.2首页的分页"></a>5.2首页的分页</h2><p>hexo博客默认首页分页，编辑<font color="#ff4444" face="幼圆">站点配置文件</font>，设置参数<code>per_page</code>为1、2、3…..以达到分页目的，0则不分页。<br><figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Home page setting</span><br><span class="line"># path: Root path for your blogs index page. (default = '')</span><br><span class="line"># per_page: Posts displayed per page. (0 = disable pagination)</span><br><span class="line"># order_by: Posts order. (Order by date descending by default)</span><br><span class="line"><span class="addition">+index_generator:</span></span><br><span class="line">  path: ''</span><br><span class="line"><span class="addition">+ per_page: 5</span></span><br><span class="line">  order_by: -date</span><br></pre></td></tr></table></figure></p>
+<h2 id="5-3文字的截断"><a href="#5-3文字的截断" class="headerlink" title="5.3文字的截断"></a>5.3文字的截断</h2><p>编辑<font color="#0099ff" face="幼圆">主题配置文件</font><br><code>excerpt_cart</code>为图文模式的截取字数，推荐小于等于100;<br><code>excerpt_pure</code>为纯净模式的截取字数，推荐字数为300;<br><code>excerpt_link</code>为阅读更多按钮展示与否的开关。</p>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># post_excerpt for index page</span><br><span class="line">excerpt_cart: 80</span><br><span class="line">excerpt_pure: 300   </span><br><span class="line">excerpt_link: true</span><br></pre></td></tr></table></figure>
+<h1 id="六、其他page的使用"><a href="#六、其他page的使用" class="headerlink" title="六、其他page的使用"></a>六、其他page的使用</h1><h2 id="6-1归档页-archive"><a href="#6-1归档页-archive" class="headerlink" title="6.1归档页(archive)"></a>6.1归档页(archive)</h2><p>Annie主题的归档页按年归档，不分页。当然，可以置参数<code>archive_generator.per_page</code>（<font color="#ff4444" face="幼圆">站点配置文件</font>）为1、2、3…..以达到分页目的。</p>
+<p><blockquote class="colorquote warning"><p>Annie主题中无效，分页是对该页面[主页、归档页、标签页、分类页]的文章进行分页，即每次（每页）展示指定数量的文章</p></blockquote><br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">archive:</span> <span class="number">1</span></span><br><span class="line"><span class="attr">category:</span> <span class="number">1</span></span><br><span class="line"><span class="attr">tag:</span> <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="attr">archive_generator:</span></span><br><span class="line"><span class="attr">  per_page:</span> <span class="number">10</span></span><br><span class="line"></span><br><span class="line"><span class="attr">tag_generator:</span></span><br><span class="line"><span class="attr">  per_page:</span> <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="attr">category_generator:</span> </span><br><span class="line"><span class="attr">  per_page:</span> <span class="number">0</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="6-2分类页-categories"><a href="#6-2分类页-categories" class="headerlink" title="6.2分类页(categories)"></a>6.2分类页(categories)</h2><p>执行命令<code>$ hexo new page categories</code>，创建分类页<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page categories</span><br></pre></td></tr></table></figure></p>
+<p>编辑站点目录下的<code>source/categories/index.md</code><br><figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">---</span></span><br><span class="line">title: categories</span><br><span class="line">date: 2018-09-11 20:31:03</span><br><span class="line"><span class="addition">+ type: "categories"</span></span><br><span class="line"><span class="comment">---</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="6-3标签页-tags"><a href="#6-3标签页-tags" class="headerlink" title="6.3标签页(tags)"></a>6.3标签页(tags)</h2><p>执行命令<code>$ hexo new page tags</code>，创建标签页<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page tags</span><br></pre></td></tr></table></figure></p>
+<p>编辑站点目录下的<code>source/tags/index.md</code><br><figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">---</span></span><br><span class="line">title: tags</span><br><span class="line">date: 2018-09-11 21:41:02</span><br><span class="line"><span class="addition">+ type: "tags"</span></span><br><span class="line"><span class="comment">---</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="6-4关于页-about"><a href="#6-4关于页-about" class="headerlink" title="6.4关于页(about)"></a>6.4关于页(about)</h2><p>执行<code>$ hexo new page about</code>命令，创建关于页<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page about</span><br></pre></td></tr></table></figure></p>
+<p>编辑站点目录下的<code>source/about/index.md</code><br><figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">---</span></span><br><span class="line">title: about</span><br><span class="line">date: 2018-09-11 20:30:08</span><br><span class="line"><span class="comment">---</span></span><br><span class="line"></span><br><span class="line"><span class="comment">---</span></span><br><span class="line"></span><br><span class="line"><span class="addition">+ &lt;font color=#000000 size=4&gt;这里可以添加介绍文字&lt;/font&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">---</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="6-5相册页-gallery"><a href="#6-5相册页-gallery" class="headerlink" title="6.5相册页(gallery)"></a>6.5相册页(gallery)</h2><p>执行命令<code>$ hexo new page gallery</code>，创建相册页<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page gallery</span><br></pre></td></tr></table></figure></p>
+<p>编辑站点目录下的<code>source/gallery/index.md</code><br><figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">---</span></span><br><span class="line">title: gallery</span><br><span class="line">date: 2019-11-21 21:54:19</span><br><span class="line"><span class="addition">+ type: "gallery"</span></span><br><span class="line"><span class="comment">---</span></span><br></pre></td></tr></table></figure></p>
+<p>打开文件<code>data.json</code>（Annie/source/plugin/gallerypage/data.json）, 按照json语法在数组[……]中添加gallery的图片数据，请设置合适的<code>eWidth</code>、<code>eHeight</code>的值。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">&#123;&#125;, </span><br><span class="line">&#123;</span><br><span class="line">        &quot;thumbnail&quot;: &quot;https://img.jpg&quot;,    	 		//小图路径</span><br><span class="line">        &quot;enlarged&quot;: &quot;https://img.jpg&quot;,			 	//大图路径（可与小图一致）</span><br><span class="line">        &quot;title&quot;: &quot;百里守约&quot;,						//图片标题</span><br><span class="line">        &quot;categories&quot;: [&#123;</span><br><span class="line">                &quot;id&quot;: 9,							//根据id来进行分类</span><br><span class="line">                &quot;title&quot;: &quot;百里玄策&quot;,</span><br><span class="line">                &quot;photo_count&quot;: 41787,				 //可忽略</span><br><span class="line">                &quot;links&quot;: &#123;							//可忽略</span><br><span class="line">                    &quot;self&quot;: &quot;https://img.jpg&quot;,</span><br><span class="line">                    &quot;photos&quot;: &quot;https://img.jpg&quot;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        ],</span><br><span class="line">        &quot;tWidth&quot;: 800.6130030959752,				//小图相对宽度</span><br><span class="line">        &quot;tHeight&quot;: 500,							   //小图相对高度</span><br><span class="line">        &quot;eWidth&quot;: 3630,							   //大图相对宽度</span><br><span class="line">        &quot;eHeight&quot;: 2907							   //大图相对高度</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;&#125;</span><br><span class="line"> ]</span><br></pre></td></tr></table></figure>
+<p>当然，你可以将该文件data.json移至其他目录，在<font color="#0099ff" face="幼圆">主题配置文件</font>中相应地修改路径<code>gallery_data</code><br><figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># gallery page</span><br><span class="line"># gallery_format: natural | square</span><br><span class="line">gallery_format: natural</span><br><span class="line"># one time to load 4 rows or other count, 0 to load img automatically when scrolling.(0,1,2,3,4,5,6......)</span><br><span class="line">gallery_limit: 0</span><br><span class="line"># data url</span><br><span class="line"><span class="addition">+ gallery_data: plugin/gallerypage/data.json</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="七、站内搜索"><a href="#七、站内搜索" class="headerlink" title="七、站内搜索"></a>七、站内搜索</h1><p>若此时仍未配置站内搜索，则执行命令，安装插件<code>hexo-generator-search-zip</code><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-search-zip --save</span><br></pre></td></tr></table></figure></p>
+<p>编辑站点目录下的<code>_config.yml</code>，添加如下语句<br><figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.json</span><br><span class="line">  zipPath: search.zip</span><br><span class="line">  versionPath: searchVersion.txt</span><br><span class="line">  field: post</span><br><span class="line">  #field: post, page or all（3个可选参数）</span><br></pre></td></tr></table></figure></p>
+<p>编辑主题目录下的<code>_config.yml</code>，添加如下语句<br><figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># Local search</span><br><span class="line"># Dependencies: https://github.com/flashlab/hexo-generator-search</span><br><span class="line">local_search:</span><br><span class="line">    enable: true</span><br><span class="line">    # if auto, trigger search by changing input</span><br><span class="line">    # if manual, trigger search by pressing enter key or search button</span><br><span class="line">    trigger: auto</span><br><span class="line">    # show top n results per article, show all results by setting to -1</span><br><span class="line">    top_n_per_article: 2</span><br></pre></td></tr></table></figure></p>
+<h1 id="八、文章页问题"><a href="#八、文章页问题" class="headerlink" title="八、文章页问题"></a>八、文章页问题</h1><h2 id="8-1相关的文章"><a href="#8-1相关的文章" class="headerlink" title="8.1相关的文章"></a>8.1相关的文章</h2><p>文章页将展示与当前文章具有相同分类、相同标签的系列文章，排序规则：分类&gt;标签&gt;时间&gt;不相关文章。你可以决定是否使用该模块，<code>posts_limit</code>为显示的文章篇数，<code>posts_excerpt</code>为每篇文章的文字截取数量。</p>
+<font color="#0099ff" face="幼圆">主题配置文件</font>中：<br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 04-POST</span><br><span class="line"># post_relate</span><br><span class="line">relate:</span><br><span class="line">    enable: true</span><br><span class="line">    posts_limit: 10</span><br><span class="line">    posts_excerpt: 120</span><br></pre></td></tr></table></figure><br><br><font color="#0099ff" face="幼圆" size="3">只有全站博客文章篇数大于1且relate.enable为真时，该模块有效。</font>
+
+<h2 id="8-2阅读量计数"><a href="#8-2阅读量计数" class="headerlink" title="8.2阅读量计数"></a>8.2阅读量计数</h2><p>对于<code>leancloud_count</code>，你必须设置appid、appkey；<br>对于<code>busuanzi_count</code>，你只需要开启它即可。</p>
+<ol>
+<li>leancloud计数<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># post_count</span><br><span class="line">leancloud_count:</span><br><span class="line"><span class="addition">+   enable: true</span></span><br><span class="line"><span class="addition">+   appid: 'dXz'</span></span><br><span class="line"><span class="addition">+    appkey: 'wzG'</span></span><br><span class="line">    like_post:</span><br><span class="line">        enable: true</span><br><span class="line"><span class="addition">+   visit_post:</span></span><br><span class="line">        enable: true</span><br><span class="line">    topN_post: </span><br><span class="line">        enable: true #param1 for topN_post</span><br><span class="line">        limit: 10 #param2 for topN_post</span><br><span class="line">busuanzi_count:</span><br><span class="line">    enable: true</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>如果你使用过Valine评论插件，那么leancloud_count的使用十分简单。如果你没有使用过，请参考文章<a href="http://localhost:4000/2019/11/21/Annie%E4%B8%BB%E9%A2%98%E8%AF%A6%E7%BB%86%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" target="_blank" rel="noopener">Hexo博客next主题添加文章阅读量统计功能</a>创建leancloud应用，创建counter类，并获取其appid、appkey，且设置上面的appid、appkey为相应的值，最后开启<code>visit_post</code>。</p>
+<ol start="2">
+<li>卜蒜子计数<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"># post_count</span><br><span class="line">leancloud_count:</span><br><span class="line">    enable: false</span><br><span class="line">    appid: 'dX--'</span><br><span class="line">    appkey: 'dX--'</span><br><span class="line">    like_post:</span><br><span class="line">        enable: true</span><br><span class="line">    visit_post:</span><br><span class="line">        enable: true</span><br><span class="line">    topN_post: </span><br><span class="line">        enable: true #param1 for topN_post</span><br><span class="line">        limit: 10 #param2 for topN_post</span><br><span class="line"></span><br><span class="line">busuanzi_count:</span><br><span class="line"><span class="addition">+    enable: true</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>该模块放置于页脚，文章页面只显示文章的阅读量，其他页面只显示总访问量和访客数（等待完善）</p>
+<h2 id="8-3文章点赞"><a href="#8-3文章点赞" class="headerlink" title="8.3文章点赞"></a>8.3文章点赞</h2><p>如果你完成了8.2阅读量计数的leancloud计数的设置，那么只需要开启<code>like_post</code>。<br><figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"># post_count</span><br><span class="line">leancloud_count:</span><br><span class="line">    enable: false</span><br><span class="line">    appid: 'dX--'</span><br><span class="line">    appkey: 'dX--'</span><br><span class="line"><span class="addition">+   like_post:</span></span><br><span class="line"><span class="addition">+       enable: true</span></span><br><span class="line">    visit_post:</span><br><span class="line">        enable: true</span><br><span class="line">    topN_post: </span><br><span class="line">        enable: true #param1 for topN_post</span><br><span class="line">        limit: 10 #param2 for topN_post</span><br><span class="line"></span><br><span class="line">busuanzi_count:</span><br><span class="line">    enable: true</span><br></pre></td></tr></table></figure></p>
+<h2 id="8-4文章排行"><a href="#8-4文章排行" class="headerlink" title="8.4文章排行"></a>8.4文章排行</h2><figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"># post_count</span><br><span class="line">leancloud_count:</span><br><span class="line">    enable: false</span><br><span class="line">    appid: 'dX--'</span><br><span class="line">    appkey: 'dX--'</span><br><span class="line">    like_post:</span><br><span class="line">       enable: true</span><br><span class="line">    visit_post:</span><br><span class="line">        enable: true</span><br><span class="line"><span class="addition">+   topN_post: </span></span><br><span class="line"><span class="addition">+       enable: true #param1 for topN_post</span></span><br><span class="line"><span class="addition">+       limit: 10 #param2 for topN_post</span></span><br><span class="line"></span><br><span class="line">busuanzi_count:</span><br><span class="line">    enable: true</span><br></pre></td></tr></table></figure>
+<p>如果你完成了8.2阅读量计数的leancloud计数的设置，那么只需要开启topN_post。（文章阅读排行依赖于8.2阅读量计数）</p>
+<h2 id="8-5文章目录"><a href="#8-5文章目录" class="headerlink" title="8.5文章目录"></a>8.5文章目录</h2><p>若一篇文章的正文存在h1、h2、h3等标题，则文章页展示目录按钮。点击目录按钮，页面左侧展示文章目录。当屏幕宽度小于1024px或页面滚动高度大于文章正文高度时，页面隐藏文章目录。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># post_toc</span><br><span class="line">post_toc:</span><br><span class="line">    enable: true</span><br><span class="line">    katelog: true</span><br></pre></td></tr></table></figure></p>
+<h2 id="8-6数学公式"><a href="#8-6数学公式" class="headerlink" title="8.6数学公式"></a>8.6数学公式</h2><p>先设置<font color="#0099ff" face="幼圆">主题配置文件</font>的<code>mathjax</code>参数，再于文章的Front-matter中添加<code>mathjax</code>: true<br><figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># post_mathJax</span><br><span class="line">mathjax:</span><br><span class="line"><span class="addition">+  enable: true</span></span><br></pre></td></tr></table></figure></p>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">title: Annie主题使用说明</span><br><span class="line">date: 2018-08-27 20:16:19</span><br><span class="line">cover: /img/post-cover/74.jpg</span><br><span class="line"><span class="addition">+ mathjax: true</span></span><br><span class="line">categories: HEXO博客</span><br><span class="line">tags: </span><br><span class="line">	- 说明</span><br><span class="line">	- other tag</span><br></pre></td></tr></table></figure>
+<h2 id="8-7代码块高亮"><a href="#8-7代码块高亮" class="headerlink" title="8.7代码块高亮"></a>8.7代码块高亮</h2><p>综合考虑hexo自身的代码高亮插件和hexo-pism-plugin高亮插件的特性及代码块解析规则，2019-04-27日更新后，主题弃用<a href="https://github.com/ele828/hexo-prism-plugin" target="_blank" rel="noopener">hexo-prism-plugin</a>插件，参考&amp;使用了next主题的代码高亮风格。</p>
+<ol>
+<li><p>编辑<font color="#0099ff" face="幼圆">主题配置文件</font>，选择并设置<code>highlight_theme</code>的值</p>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># post_code</span><br><span class="line"># highlight_theme: normal | night | night blue | night bright | night eighties</span><br><span class="line"><span class="addition">+ highlight_theme: night bright</span></span><br><span class="line">code_copy:</span><br><span class="line">    enable: true</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>编辑<font color="#ff4444" face="幼圆">站点配置文件</font>，设置<code>highlight</code>的值</p>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"># Writing</span><br><span class="line">new_post_name: :title.md # File name of new posts</span><br><span class="line">default_layout: post</span><br><span class="line">titlecase: false # Transform title into titlecase</span><br><span class="line">external_link: true # Open external links in new tab</span><br><span class="line">filename_case: 0</span><br><span class="line">render_drafts: false</span><br><span class="line">post_asset_folder: true</span><br><span class="line">relative_link: false</span><br><span class="line">future: true</span><br><span class="line"><span class="addition">+highlight:</span></span><br><span class="line"><span class="addition">+  enable: true</span></span><br><span class="line"><span class="addition">+  line_number: true</span></span><br><span class="line">  auto_detect: false</span><br><span class="line">  tab_replace:</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="8-8代码块复制"><a href="#8-8代码块复制" class="headerlink" title="8.8代码块复制"></a>8.8代码块复制</h2><p>只有<code>theme.code_copy.enable</code>为真且<code>config.highlight.enable</code>为真时，代码块的复制功能才有效<br><figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># post_code</span><br><span class="line"># highlight_theme: normal | night | night blue | night bright | night eighties</span><br><span class="line">highlight_theme: night bright</span><br><span class="line">code_copy:</span><br><span class="line"><span class="addition">+    enable: true</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="8-9文章评论功能"><a href="#8-9文章评论功能" class="headerlink" title="8.9文章评论功能"></a>8.9文章评论功能</h2><p>Hexo-theme-Annie主题集成了gitalk、DesertsP版的valine、livere评论插件。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">评论插件</th>
+<th style="text-align:center">使用方法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">gitalk</td>
+<td style="text-align:center">正式文档、Annie主题使用Gitalk</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">valine</td>
+<td style="text-align:center">正式文档、加个Valine评论系统</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">livere</td>
+<td style="text-align:center">为Hexo博客添加LiveRe评论系统</td>
+</tr>
+</tbody>
+</table>
+<table><tr><td bgcolor="PowderBlue">注：对于gitalk，你必须设置clientID、clientSecret；对于Valine，你必须设置appid、appkey；对于livere，你必须设置livere_uid。</td></tr></table>
+
+<h2 id="8-10文章分享功能"><a href="#8-10文章分享功能" class="headerlink" title="8.10文章分享功能"></a>8.10文章分享功能</h2><p>Hexo-theme-Annie主题集成了addThis、baiduShare、shareThis、socialShare分享插件。<br>|序号|分享插件|使用方法|<br>|:-:|:-:|:-:|<br>|1|addThis|登录addThis获取应用的账户id|<br>|2|baiduShare|直接使用|<br>|3|shareThis|登录shareThis获取应用的账户id|<br>|4|socialShare|直接使用|</p>
+<table><tr><td bgcolor="PowderBlue">注：使用addThis、shareThis时，应注意关闭浏览器的内容拦截插件。</td></tr></table>
+
+<h1 id="九、站点分析"><a href="#九、站点分析" class="headerlink" title="九、站点分析"></a>九、站点分析</h1><table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">分析插件</th>
+<th style="text-align:center">使用方法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">卜算子分析</td>
+<td style="text-align:center">直接使用</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">baidu_analytics</td>
+<td style="text-align:center">需获取账户id</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">cnzz_analytics</td>
+<td style="text-align:center">需获取账户id</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">google_analytics</td>
+<td style="text-align:center">需获取账户id</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">tencent_analytics</td>
+<td style="text-align:center">需获取账户id</td>
+</tr>
+</tbody>
+</table>
+<h1 id="十、其他的问题"><a href="#十、其他的问题" class="headerlink" title="十、其他的问题"></a>十、其他的问题</h1><h2 id="10-1社交链接"><a href="#10-1社交链接" class="headerlink" title="10.1社交链接"></a>10.1社交链接</h2><p>直接增加相应的社交图标、社交链接即可<br><figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"># social</span><br><span class="line">social:</span><br><span class="line">    github:</span><br><span class="line">        url: http://github.com/</span><br><span class="line">        icon: fa fa-github</span><br><span class="line">    weibo:</span><br><span class="line">        url: http://github.com/</span><br><span class="line">        icon: fa fa-weibo    </span><br><span class="line">    pinterest: </span><br><span class="line">        url: http://github.com/</span><br><span class="line">        icon: fa fa-pinterest</span><br><span class="line">    instagram:</span><br><span class="line">        url: http://github.com/</span><br><span class="line">        icon: fa fa-instagram</span><br><span class="line">    twitter:</span><br><span class="line">        url: http://github.com/</span><br><span class="line">        icon: fa fa-twitter</span><br><span class="line">    rss: </span><br><span class="line">        url: /atom.xml</span><br><span class="line">        icon: fa fa-rss</span><br><span class="line"><span class="addition">+   digg: </span></span><br><span class="line"><span class="addition">+       url: http://github.com/</span></span><br><span class="line"><span class="addition">+       icon: fa fa-digg</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="10-2RSS订阅"><a href="#10-2RSS订阅" class="headerlink" title="10.2RSS订阅"></a>10.2RSS订阅</h2><p>主题将使用到 hexo-generator-feed 插件来生成atom.xml 文件。执行命令安装该插件：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure></p>
+<p>编辑<font color="#ff4444" face="幼圆">站点配置文件</font>，添加相应的参数：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">+feed:</span><br><span class="line">+  type: atom</span><br><span class="line">+  path: atom.xml</span><br><span class="line">+  limit: 20</span><br></pre></td></tr></table></figure></p>
+<p>执行 <code>hexo clean &amp; hexo g</code>重新生成博客文件，你将在 hexo/public/ 目录下看到 <code>atom.xml</code> 文件，说明你已经安装成功了。 （rss的社交链接见于上一节：1. 社交链接）</p>
+<h2 id="10-3版权声明"><a href="#10-3版权声明" class="headerlink" title="10.3版权声明"></a>10.3版权声明</h2><p>对于copyright ，<code>since</code>为站点建立年份，<code>cotent_author</code>为站点作者。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">_config.yml</span><br><span class="line"># copyright  </span><br><span class="line">since: 2018</span><br><span class="line">cotent_author: author</span><br></pre></td></tr></table></figure>
+<h2 id="10-4点击页面浮现桃心"><a href="#10-4点击页面浮现桃心" class="headerlink" title="10.4点击页面浮现桃心"></a>10.4点击页面浮现桃心</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># when click, emerge heart</span><br><span class="line">love:</span><br><span class="line">    enable: true</span><br><span class="line"></span><br><span class="line"># back to top</span><br><span class="line">totop:</span><br><span class="line">    enable: true</span><br></pre></td></tr></table></figure>
+<p>对于<code>love</code>，若设置为true，则点击页面时，会出现随机颜色的桃心💚💛💕。对于<code>totop</code>，若设置为true，则启用返回顶部按钮。</p>
+<h1 id="十一、开发定制问题"><a href="#十一、开发定制问题" class="headerlink" title="十一、开发定制问题"></a>十一、开发定制问题</h1><h2 id="11-1主题项目结构"><a href="#11-1主题项目结构" class="headerlink" title="11.1主题项目结构"></a>11.1主题项目结构</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">ANNIE</span><br><span class="line">├─languages					#国际化语言支持</span><br><span class="line">├─layout					#html页面模板</span><br><span class="line">│  └─_partial</span><br><span class="line">│      ├─custom</span><br><span class="line">│      ├─plugin</span><br><span class="line">│      │  ├─clipboard</span><br><span class="line">│      │  ├─comment</span><br><span class="line">│      │  ├─share</span><br><span class="line">│      │  └─statistics</span><br><span class="line">│      ├─post</span><br><span class="line">│      └─widget</span><br><span class="line">├─scripts					#站点脚本</span><br><span class="line">└─source					#主题资源</span><br><span class="line">    ├─css</span><br><span class="line">    │  └─_highlight</span><br><span class="line">    ├─img</span><br><span class="line">    │  ├─post-cover</span><br><span class="line">    │  ├─quote</span><br><span class="line">    │  └─random</span><br><span class="line">    ├─js</span><br><span class="line">    └─plugin</span><br><span class="line">        ├─chinese</span><br><span class="line">        ├─clipboard</span><br><span class="line">        ├─comment</span><br><span class="line">        ├─fancybox</span><br><span class="line">        ├─gallerypage</span><br><span class="line">        │  └─images</span><br><span class="line">        ├─imgLazyLoader</span><br><span class="line">        ├─imgResize</span><br><span class="line">        ├─love</span><br><span class="line">        ├─motto</span><br><span class="line">        ├─nicescroll</span><br><span class="line">        ├─search</span><br><span class="line">        ├─toc</span><br><span class="line">        └─vibrant</span><br></pre></td></tr></table></figure>
+<p>Annie主题基于hexo 3.8.0、ejs、styl开发而成。一般来说，如果你想修改页面的html结构，请到layout目录下添加或修改相应的ejs文件； 如果你想修改页面元素的css样式，请到source/css目录下添加或修改相应的styl文件；如果你想添加一些js代码，原则上，自定义代码片段应添加于source/js/main.js文件中，引入的js文件应放置于source/plugin目录下</p>
+<h2 id="11-2主题字体问题"><a href="#11-2主题字体问题" class="headerlink" title="11.2主题字体问题"></a>11.2主题字体问题</h2><p>主题整体字体大小，修改html标签的<code>font-size</code>属性<br><figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">html &#123;</span><br><span class="line"><span class="deletion">-   font-size: 16px;</span></span><br><span class="line"><span class="addition">+   font-size: 14px;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>主题整体字体族，修改body标签的<code>font-family</code>属性<br><figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line"><span class="deletion">-   font-family: Ovo, Georgia, STZhongsong, "Microsoft YaHei", serif;</span></span><br><span class="line"><span class="addition">+   font-family: "PingFang SC", "Microsoft YaHei";</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>文章详情页字体族，修改#layout-post类的<code>font-family</code>属性<br><figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#layout-post &#123;</span><br><span class="line"><span class="addition">+   font-family: "Source Sans Pro", "Segoe UI";</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>你可以检索style文件，查询相应的标签或类，进而设置相应元素的属性。</p>
+<h2 id="11-3页头菜单颜色"><a href="#11-3页头菜单颜色" class="headerlink" title="11.3页头菜单颜色"></a>11.3页头菜单颜色</h2><p>页头菜单颜色会根据背景的主题色变化非黑即白。亦即主题色为浅色时，字体为黑；主题色为深色时，字体为白。你可以参考main.js中函数<code>Annie_ColorExtraction(img)</code>。</p>
+	
+	</div>
+	
+	<div id="current-post-cover" data-scr="/img/CoverImage/Hexo/Annie.png"></div>
+
+	<!-- relate post, comment...-->
+	<div class="investment-container">
+		<div class="investment-header">
+			<div class="investment-title-1">
+				<div class="on">相关文章</div>
+				<div>评论</div>
+				<div>分享</div>
+			</div>
+			<div class="investment-title-2">	            
+				
+	<span>
+		<a href="javascript: window.scrollTo(0, 0);">返回顶部</a>
+		
+		
+			<a href="/2019/01/25/NavigationView头部监听事件/" title="NavigationView头部监听事件" rel="next">
+				下一篇&raquo;
+			</a>
+			
+	</span>
+
+
+      		
+			</div>	
+		</div>
+		
+		<div class="investment-content">
+			<div class="investment-content-list">
+				
+
+<div class="relate-post">
+	
+		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/01/25/NavigationView头部监听事件/" title="NavigationView头部监听事件">
+								NavigationView头部监听事件			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								一月 25日, 2019				
+							</p>
+							<p class="relate-post-content">
+								
+参考网址
+一、删除xml文件中的静态引用找到&lt;NavigationView&gt;控件，将控件里的静态引用删除12345678&lt;android.support.design.widget.NavigationView	a...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/01/25/NavigationView头部监听事件/" title="NavigationView头部监听事件">				
+								
+								<img class="lazy" src="/img/CoverDefault/placeholder.jpg" data-src="/img/CoverImage/Android/navigationview.png" alt="NavigationView头部监听事件"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/01/21/安卓开发之折线图/" title="安卓开发之折线图">
+								安卓开发之折线图			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								一月 21日, 2019				
+							</p>
+							<p class="relate-post-content">
+								一、新建工程Line_chart勾选自动生成activity_layout.xml文件
+二、添加jar包app/src/main目录下新建libs文件夹，加入包hellocharts-library-1.5.8.jar
+三、添加依赖打...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/01/21/安卓开发之折线图/" title="安卓开发之折线图">				
+								
+								<img class="lazy" src="/img/CoverDefault/placeholder.jpg" data-src="/img/CoverImage/Android/linechart.png" alt="安卓开发之折线图"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/10/13/导入工程jar包重复问题解决/" title="导入工程jar包重复问题解决">
+								导入工程jar包重复问题解决			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十月 13日, 2018				
+							</p>
+							<p class="relate-post-content">
+								
+
+  
+  
+    嘘！密码可别读出来！
+    
+  
+
+Incorrect Password!
+No content to display!
+
+U2FsdGVkX19lmTarn/LiwIULhp5zkhmpXig6GqOlD...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/10/13/导入工程jar包重复问题解决/" title="导入工程jar包重复问题解决">				
+								
+								<img class="lazy" src="/img/CoverDefault/placeholder.jpg" data-src="/img/CoverImage/Android/jar包重复.png" alt="导入工程jar包重复问题解决"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/09/29/定制ListView界面/" title="定制ListView界面">
+								定制ListView界面			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 29日, 2018				
+							</p>
+							<p class="relate-post-content">
+								ListView
+一、作用当手机屏幕空间有限而不能一次将内容显示完时，需要借助ListView允许用户通过手指上下滑动的方式将屏幕外的数据滚动到屏幕内，同时屏幕上原有的数据滚动出屏幕。例如查看QQ消息等。
+二、用法2.1新建项目新建一...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/09/29/定制ListView界面/" title="定制ListView界面">				
+								
+								<img class="lazy" src="/img/CoverDefault/placeholder.jpg" data-src="/img/CoverImage/Android/listview.png" alt="定制ListView界面"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/09/19/安卓开发之四大布局/" title="安卓开发之四大布局">
+								安卓开发之四大布局			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 19日, 2018				
+							</p>
+							<p class="relate-post-content">
+								布局与控件的关系：
+一、线性布局（LinearLayout）这个布局会将它所包含的控件在线性方向上依次排列。android:orientation属性指定控件排列方向：    vertical：垂直方向    horizontal:水...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/09/19/安卓开发之四大布局/" title="安卓开发之四大布局">				
+								
+								<img class="lazy" src="/img/CoverDefault/placeholder.jpg" data-src="/img/CoverImage/Android/四大布局.png" alt="安卓开发之四大布局"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/09/17/安卓开发之七种控件/" title="安卓开发之七种控件">
+								安卓开发之七种控件			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 17日, 2018				
+							</p>
+							<p class="relate-post-content">
+								一、TextView作用：用于在界面上显示一段文本信息用法：在布局文件中加入TextView控件123456&lt;TextView	android:id="@+id/text_view"    	android:layout_wid...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/09/17/安卓开发之七种控件/" title="安卓开发之七种控件">				
+								
+								<img class="lazy" src="/img/CoverDefault/placeholder.jpg" data-src="/img/CoverImage/Android/七种控件.png" alt="安卓开发之七种控件"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/09/12/用Hexo写博客及语法规则/" title="用Hexo写博客及语法规则">
+								用Hexo写博客及语法规则			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 12日, 2018				
+							</p>
+							<p class="relate-post-content">
+								新建一篇文章命令：
+1$ hexo new &quot;文章标题&quot;
+例如，执行命令：hexo new &quot;Helloworld&quot;,\source\_posts文件夹下会出现对应的文件Helloworld.m...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/09/12/用Hexo写博客及语法规则/" title="用Hexo写博客及语法规则">				
+								
+								<img class="lazy" src="/img/CoverDefault/placeholder.jpg" data-src="/img/CoverImage/Hexo/Hexo写博客.png" alt="用Hexo写博客及语法规则"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/11/07/冬/" title="冬">
+								冬			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十一月 7日, 2018				
+							</p>
+							<p class="relate-post-content">
+								
+
+  
+  
+    嘘！密码可别读出来！
+    
+  
+
+Incorrect Password!
+No content to display!
+
+U2FsdGVkX1+zFAYR0ntXyCcXqELB1iTolC5NEHreP...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/11/07/冬/" title="冬">				
+								
+								<img class="lazy" src="/img/CoverDefault/placeholder.jpg" data-src="/img/CoverImage/Life/winter.jpg" alt="冬"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/10/30/入夜渐微凉/" title="入夜渐微凉">
+								入夜渐微凉			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十月 30日, 2018				
+							</p>
+							<p class="relate-post-content">
+								
+
+  
+  
+    嘘！密码可别读出来！
+    
+  
+
+Incorrect Password!
+No content to display!
+
+U2FsdGVkX182zYlhW7JTLNMSwHkBUlsJkFZy4JSgj...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/10/30/入夜渐微凉/" title="入夜渐微凉">				
+								
+								<img class="lazy" src="/img/CoverDefault/placeholder.jpg" data-src="/img/CoverImage/Life/hust.jpg" alt="入夜渐微凉"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/10/28/转（Dialog）/" title="转（Dialog）">
+								转（Dialog）			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十月 28日, 2018				
+							</p>
+							<p class="relate-post-content">
+								Android Dialog使用、自定义带动画的Dialog使用
+
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/10/28/转（Dialog）/" title="转（Dialog）">				
+								
+								<img class="lazy" src="/img/CoverDefault/placeholder.jpg" data-src="/img/CoverDefault/cart_cover1.jpg" alt="转（Dialog）"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+		</ul>
+	
+</div>	
+			</div>
+			<div class="investment-content-list">
+				<div class="layout-comment">
+
+	
+
+		
+
+			<!-- I don't know !!!-->
+			<div>Please check the comment setting in config.yml of hexo-theme-Annie!</div>
+			
+		
+		
+	
+
+</div>
+			</div>
+			<div class="investment-content-list">
+				<div class="layout-share">
+	
+	
+
+		
+			
+			<!-- socialShare share -->
+			<div class="social-share"></div>
+
+<!--  css & js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+			
+		
+		
+	
+</div>
+
+
+			</div>
+		</div>	
+	</div>
+	</div>
+</div>
+
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+
+<!-- show math formula -->
+
+
+
+	 
+	<script src="/plugin/clipboard/clipboard.js"></script>
+	<script>
+		// Copy code !
+	    function codePreprocessing() {
+	        $("#article-content .highlight").each(function() {
+
+	            $(this).wrap('<div id="post-code"></div>');
+
+	        })
+
+	        $("#article-content #post-code").each(function() {
+
+	            $(this).prepend('<nav class="copy-nav"><span><i class="code-language"></i></span></nav>');
+
+	        })
+
+	        $("#article-content .copy-nav").each(function() {
+	            var temp = $(this).next().attr('class'),
+	                language = ((temp.length > 9) && (temp != null)) ? temp.substr(10) : "none"; //why 9? Need to check language?
+
+	            $(this).find('.code-language').text(language);
+
+	            $(this).append('<span class="copy-btn"><i class="fa fa-copy" aria-hidden="true"></i></span>');
+
+	        });
+	    }
+
+		function codeCopy() {
+		    $('#article-content #post-code').each(function(i) {
+		        var codeCopyId = 'codeCopy-' + i;
+
+		        var codeNode = $(this).find('.code'),
+		            copyButton = $(this).find('.copy-btn');
+
+		        codeNode.attr('id', codeCopyId);
+		        copyButton.attr('data-clipboard-target-id', codeCopyId);
+		    })
+
+		    
+			var clipboard = new ClipboardJS('.copy-btn', {
+					target: function(trigger) {
+						return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+					}
+		      	});
+
+			//pure js
+			function showTooltip(elem, msg) {		   
+				elem.setAttribute('aria-label', msg);
+				elem.setAttribute('class', 'copy-btn copy-status');
+				setTimeout(function() {
+					elem.setAttribute('class', 'copy-btn');
+				}, 2000);
+			}
+
+			clipboard.on('success', function(e) {
+			    e.clearSelection();
+			    console.info('Action:', e.action);		   
+			    console.info('Trigger:', e.trigger);
+			    showTooltip(e.trigger, 'Copied!');
+			    
+			});
+			clipboard.on('error', function(e) {
+			    console.error('Action:', e.action);
+			    console.error('Trigger:', e.trigger);
+			});
+		
+
+		}
+
+		if ($('.layout-post').length) {
+		    codePreprocessing();
+		    codeCopy();
+		} 
+	</script>
+
+
+
+
+
+<link rel="stylesheet" href="/plugin/fancybox/jquery.fancybox.css">
+<script src="/plugin/fancybox/jquery.fancybox.js"></script>
+
+<script type="text/javascript">
+	var titleID = $('.article-title a'),
+		imageID = $('.article-content img'),
+		videoID = $('.article-content video');
+
+	var postTitle = titleID.text() ? titleID.text() : "No post title!";
+
+	imageID.each(function() {
+		var imgPath = $(this).attr('src'),
+			imgTitle = $(this).attr('alt') ? $(this).attr('alt') : "No image description!";
+
+		//给每个匹配的<img>元素打包, 即添加父元素<a>
+		$(this).wrap('<a data-fancybox="gallery" data-caption=" 《 ' + postTitle + ' 》 ' + imgTitle + ' "  href=" ' + imgPath + ' "> </a>');
+	});
+
+	videoID.each(function() {
+		var videoPath = $(this).attr('src');
+
+		//给每个匹配的<img>元素打包, 即添加父元素<a>
+		$(this).wrap('<a data-fancybox href=" ' + videoPath + ' "> </a>');
+	});
+	//TODO：支持html5 video
+
+	if($('#layout-post').length) {
+		$('[data-fancybox="gallery"]').fancybox({
+			loop: true,
+			buttons: [
+				"zoom",
+				"share",
+				"slideShow",
+				"fullScreen",
+				//"download",
+				"thumbs",
+				"close"
+			],
+			protect: false
+		});
+	}
+</script>
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div class="social">
+		<ul>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-github"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-weibo"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-pinterest"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-instagram"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-twitter"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<i class="fa fa-rss"></i>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+		
+	<div class="copyright">
+		<p>
+			 
+				&copy;2018 - 2019, content by zccon. All Rights Reserved.
+			
+			
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+		
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+
+		<span id="busuanzi_container_page_pv">
+	  		本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+		</span>
+
+	
+
+
+
+
+		</p>
+		<p>
+			<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- set '1' to show motto in all pages! -->
+
+	<script src="/plugin/motto/motto.js"></script>
+	
+	<script type="text/javascript">
+		$(".motto").html( getMingYanContent() );
+	</script>	
+
+
+
+
+	<!--
+	时间：2018-10-3
+	描述：
+		插件名称：hexo-generator-search-zip
+		插件来源: https://github.com/SuperKieran/hexo-generator-search-zip
+		代码参考：https://github.com/SuperKieran/TKL/blob/master/layout/_partial/search.ejs(Include: js & css)	
+-->
+<div class="popup search-popup local-search-popup" >
+	<div class="local-search-container">
+		<span class="popup-btn-close">
+      		ESC
+   		</span>
+		<div class="local-search-header">
+			<div class="input-prompt">				
+			</div>
+			<input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+		</div>
+		<div class="local-search-body">
+			<div id="local-search-output"></div>
+		</div>
+		<div class="local-search-footer">
+			<div class="topN-post">				
+				
+								
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="/plugin/search/ziploader.js"></script>
+<script src="/plugin/search/search.js"></script>
+
+<script type="text/javascript">
+	var search_path = 'search.json',
+		zip_Path = '/search.zip',
+		version_Path = '/searchVersion.txt',
+		input_Trigger = 'auto',
+		top_N = '2';
+
+	themeLocalSearch({
+		search_path, 
+		zip_Path, 
+		version_Path, 
+		input_Trigger, 
+		top_N
+	});
+</script>
+
+
+<!-- love effect -->
+
+	<script src="/plugin/love/love.js"></script>
+
+
+<!-- back to top -->
+
+	
+	<div id="totop">
+  		<a href="javascript:;"  name="TOTOP" class="fa fa-arrow-up" ></a>
+	</div>
+
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+
+	
+	
+	
+	
+ 
+
+<script src="/plugin/vibrant/vibrant.js"></script>
+<script src="/plugin/chinese/chinese.js"></script>
+<script src="/plugin/imgLazyLoader/yall.min.js"></script>
+<script src="/plugin/imgResize/jquery.resizeimagetoparent.min.js"></script>
+<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/js/resizediv.js"></script>
+<script src="/js/main.js"></script>
+	</body>	
+</html>

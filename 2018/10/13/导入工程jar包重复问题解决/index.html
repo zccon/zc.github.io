@@ -1,0 +1,1044 @@
+<!--
+	作者：Sariay
+	时间：2018-09-25
+	描述：There may be a bug, but don't worry, QiLing(器灵) says that it can work normally!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+      导入工程jar包重复问题解决 | zccon&#39;s blog
+    
+  </title>
+  <meta name="author" content="zccon">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/img/Logo/favicon.ico">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/Annie.css">
+  
+  <!-- jquery -->
+	<script src="/js/jquery.min.js"></script>
+
+  <!-- leancloud -->
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+<script src="/js/leancloud.js"></script>
+</head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground" data-img-mode="normal" data-normal-src="/img/CoverDefault/1.jpg" data-random-max="110" data-random-src="https://sariay.github.io/Random-img/">
+	<div class="mask">
+		<!-- Logo and navigation -->
+		<div class="h-header">
+			<div id="logo">
+				<a href="/">
+					
+						Welcome
+					
+				</a>
+			</div>
+			
+			<div id="navigation-show">
+				<ul>
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home">主页</a>
+		</li>
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive">归档</a>
+		</li>
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories">分类</a>
+		</li>
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags">标签</a>
+		</li>
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about">关于</a>
+		</li>
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery">相册</a>
+		</li>
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
+	
+</ul>
+			</div>				
+		</div>
+
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<p class="motto"></p>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more"><i class="fa fa-angle-double-down" aria-hidden="true"></i>
+			</a>
+
+			
+				<!-- 
+	This is only a demo, please go to "https://time.is" to set your city time! 
+-->
+<style type="text/css">
+	.header-date {
+		font-size: 1.6rem;
+		color: #fff;
+		position: absolute;
+		bottom: 5px;
+		right: 1rem;
+		writing-mode: tb-rl;
+	}	
+	
+	.header-date a {
+		border-bottom: none;
+	}
+
+	@media only screen and (max-width: 768 ) {
+		.header-date {
+			font-size: 1rem;
+		}			
+	}
+</style>
+<div class="header-date">
+	<a href="https://time.is/Beijing" id="time_is_link" rel="nofollow" ></a>
+	<span id="Beijing_z43d"></span>
+</div>
+<script src="//widget.time.is/zh.js"></script>
+<script>
+	time_is_widget.init({
+		Beijing_z43d:{
+			template:"DATE", 
+			date_format:"year年 monthname dnum日"
+		}
+	});
+</script>
+			
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><h1>0.0%</h1></div>
+
+	<div class="toc-switch"><span class="switch-button">目录</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			当前文章&nbsp;:&nbsp;《导入工程jar包重复问题解决》
+		
+	</p>
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<h3>Navigation</h3>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	<div class="nav-body">
+		<ul>
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home">主页</a>
+		</li>
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive">归档</a>
+		</li>
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories">分类</a>
+		</li>
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags">标签</a>
+		</li>
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about">关于</a>
+		</li>
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery">相册</a>
+		</li>
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
+	
+</ul>
+	</div>
+	<div class="nav-footer">
+		<ul>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-github"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-weibo"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-pinterest"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-instagram"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-twitter"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<i class="fa fa-rss"></i>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			<!--
+	时间：2018-11-17
+	描述：
+		插件名称：katelog.min.js
+		插件作者：KELEN
+		插件来源: https://github.com/KELEN/katelog
+-->
+	 
+
+<div class="layout-post">
+	<div id="layout-post">
+	<div class="article-title">
+		<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+		
+	<a href="/2018/10/13/导入工程jar包重复问题解决/" itemprop="url">
+		导入工程jar包重复问题解决
+	</a>
+
+	</div>
+
+	<div class="article-meta">
+		<span>
+			<i class="fa fa-calendar"></i>
+			
+
+
+	发布于
+
+	<a href="/2018/10/13/导入工程jar包重复问题解决/" itemprop="url">
+		<time datetime="2018-10-13T12:36:44.000Z" itemprop="datePublished">
+	  		2018-10-13
+	  </time>
+	</a>
+	&nbsp;
+
+
+
+
+
+			
+
+
+
+
+	更新于
+
+	<a href="/2018/10/13/导入工程jar包重复问题解决/" itemprop="url">
+		<time datetime="2018-10-13T12:36:44.000Z" itemprop="dateUpdated">
+	  		2019-11-22
+	  </time>
+	</a> 
+
+
+
+		</span>
+		<span>
+			<i class="fa fa-tags"></i>
+			
+	
+		<a href="/tags/Android/" class=" ">
+			Android
+		</a>
+	
+		<a href="/tags/手机开发/" class=" ">
+			手机开发
+		</a>
+	
+		<a href="/tags/problem/" class=" ">
+			problem
+		</a>
+	
+		
+		</span>
+		
+		
+
+
+
+	</div>
+
+	<div class="article-content" id="article-content">
+		<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<div id="hbe-security">
+  <div class="hbe-input-container">
+  <input type="password" class="hbe-form-control" id="pass" placeholder="嘘！密码可别读出来！" />
+    <label for="pass">嘘！密码可别读出来！</label>
+    <div class="bottom-line"></div>
+  </div>
+</div>
+<div id="decryptionError" style="display: none;">Incorrect Password!</div>
+<div id="noContentError" style="display: none;">No content to display!</div>
+<div id="encrypt-blog" style="display:none">
+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
+</div>
+<script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">	
+	</div>
+	
+	<div id="current-post-cover" data-scr="/img/CoverImage/Android/jar包重复.png"></div>
+
+	<!-- relate post, comment...-->
+	<div class="investment-container">
+		<div class="investment-header">
+			<div class="investment-title-1">
+				<div class="on">相关文章</div>
+				<div>评论</div>
+				<div>分享</div>
+			</div>
+			<div class="investment-title-2">	            
+				
+	<span>
+		<a href="javascript: window.scrollTo(0, 0);">返回顶部</a>
+		
+			<a href="/2018/10/28/转（Dialog）/" title="转（Dialog）" rel="prev">
+				&laquo;上一篇
+			</a>
+		
+		
+			<a href="/2018/09/29/定制ListView界面/" title="定制ListView界面" rel="next">
+				下一篇&raquo;
+			</a>
+			
+	</span>
+
+
+      		
+			</div>	
+		</div>
+		
+		<div class="investment-content">
+			<div class="investment-content-list">
+				
+
+<div class="relate-post">
+	
+		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/11/21/Annie主题详细使用说明/" title="Annie主题详细使用说明">
+								Annie主题详细使用说明			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十一月 21日, 2019				
+							</p>
+							<p class="relate-post-content">
+								
+开始之前的说明
+
+
+文中所有的指令都是在Hexo文件夹下开启的命令行中执行的 
+
+代码对比
+
+
+123  This is a diff block.+ This is add!- This is subtract!
+
+Bash指令
+...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/11/21/Annie主题详细使用说明/" title="Annie主题详细使用说明">				
+								
+								<img class="lazy" src="/img/CoverDefault/placeholder.jpg" data-src="/img/CoverImage/Hexo/Annie.png" alt="Annie主题详细使用说明"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/01/25/NavigationView头部监听事件/" title="NavigationView头部监听事件">
+								NavigationView头部监听事件			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								一月 25日, 2019				
+							</p>
+							<p class="relate-post-content">
+								
+参考网址
+一、删除xml文件中的静态引用找到&lt;NavigationView&gt;控件，将控件里的静态引用删除12345678&lt;android.support.design.widget.NavigationView	a...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/01/25/NavigationView头部监听事件/" title="NavigationView头部监听事件">				
+								
+								<img class="lazy" src="/img/CoverDefault/placeholder.jpg" data-src="/img/CoverImage/Android/navigationview.png" alt="NavigationView头部监听事件"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/01/21/安卓开发之折线图/" title="安卓开发之折线图">
+								安卓开发之折线图			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								一月 21日, 2019				
+							</p>
+							<p class="relate-post-content">
+								一、新建工程Line_chart勾选自动生成activity_layout.xml文件
+二、添加jar包app/src/main目录下新建libs文件夹，加入包hellocharts-library-1.5.8.jar
+三、添加依赖打...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/01/21/安卓开发之折线图/" title="安卓开发之折线图">				
+								
+								<img class="lazy" src="/img/CoverDefault/placeholder.jpg" data-src="/img/CoverImage/Android/linechart.png" alt="安卓开发之折线图"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/09/29/定制ListView界面/" title="定制ListView界面">
+								定制ListView界面			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 29日, 2018				
+							</p>
+							<p class="relate-post-content">
+								ListView
+一、作用当手机屏幕空间有限而不能一次将内容显示完时，需要借助ListView允许用户通过手指上下滑动的方式将屏幕外的数据滚动到屏幕内，同时屏幕上原有的数据滚动出屏幕。例如查看QQ消息等。
+二、用法2.1新建项目新建一...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/09/29/定制ListView界面/" title="定制ListView界面">				
+								
+								<img class="lazy" src="/img/CoverDefault/placeholder.jpg" data-src="/img/CoverImage/Android/listview.png" alt="定制ListView界面"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/09/19/安卓开发之四大布局/" title="安卓开发之四大布局">
+								安卓开发之四大布局			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 19日, 2018				
+							</p>
+							<p class="relate-post-content">
+								布局与控件的关系：
+一、线性布局（LinearLayout）这个布局会将它所包含的控件在线性方向上依次排列。android:orientation属性指定控件排列方向：    vertical：垂直方向    horizontal:水...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/09/19/安卓开发之四大布局/" title="安卓开发之四大布局">				
+								
+								<img class="lazy" src="/img/CoverDefault/placeholder.jpg" data-src="/img/CoverImage/Android/四大布局.png" alt="安卓开发之四大布局"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/09/17/安卓开发之七种控件/" title="安卓开发之七种控件">
+								安卓开发之七种控件			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 17日, 2018				
+							</p>
+							<p class="relate-post-content">
+								一、TextView作用：用于在界面上显示一段文本信息用法：在布局文件中加入TextView控件123456&lt;TextView	android:id="@+id/text_view"    	android:layout_wid...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/09/17/安卓开发之七种控件/" title="安卓开发之七种控件">				
+								
+								<img class="lazy" src="/img/CoverDefault/placeholder.jpg" data-src="/img/CoverImage/Android/七种控件.png" alt="安卓开发之七种控件"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/09/12/用Hexo写博客及语法规则/" title="用Hexo写博客及语法规则">
+								用Hexo写博客及语法规则			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 12日, 2018				
+							</p>
+							<p class="relate-post-content">
+								新建一篇文章命令：
+1$ hexo new &quot;文章标题&quot;
+例如，执行命令：hexo new &quot;Helloworld&quot;,\source\_posts文件夹下会出现对应的文件Helloworld.m...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/09/12/用Hexo写博客及语法规则/" title="用Hexo写博客及语法规则">				
+								
+								<img class="lazy" src="/img/CoverDefault/placeholder.jpg" data-src="/img/CoverImage/Hexo/Hexo写博客.png" alt="用Hexo写博客及语法规则"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/10/28/转（Dialog）/" title="转（Dialog）">
+								转（Dialog）			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十月 28日, 2018				
+							</p>
+							<p class="relate-post-content">
+								Android Dialog使用、自定义带动画的Dialog使用
+
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/10/28/转（Dialog）/" title="转（Dialog）">				
+								
+								<img class="lazy" src="/img/CoverDefault/placeholder.jpg" data-src="/img/CoverDefault/cart_cover1.jpg" alt="转（Dialog）"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/11/07/冬/" title="冬">
+								冬			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十一月 7日, 2018				
+							</p>
+							<p class="relate-post-content">
+								
+
+  
+  
+    嘘！密码可别读出来！
+    
+  
+
+Incorrect Password!
+No content to display!
+
+U2FsdGVkX1+zFAYR0ntXyCcXqELB1iTolC5NEHreP...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/11/07/冬/" title="冬">				
+								
+								<img class="lazy" src="/img/CoverDefault/placeholder.jpg" data-src="/img/CoverImage/Life/winter.jpg" alt="冬"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/10/30/入夜渐微凉/" title="入夜渐微凉">
+								入夜渐微凉			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十月 30日, 2018				
+							</p>
+							<p class="relate-post-content">
+								
+
+  
+  
+    嘘！密码可别读出来！
+    
+  
+
+Incorrect Password!
+No content to display!
+
+U2FsdGVkX182zYlhW7JTLNMSwHkBUlsJkFZy4JSgj...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/10/30/入夜渐微凉/" title="入夜渐微凉">				
+								
+								<img class="lazy" src="/img/CoverDefault/placeholder.jpg" data-src="/img/CoverImage/Life/hust.jpg" alt="入夜渐微凉"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+		</ul>
+	
+</div>	
+			</div>
+			<div class="investment-content-list">
+				<div class="layout-comment">
+
+	
+
+		
+
+			<!-- I don't know !!!-->
+			<div>Please check the comment setting in config.yml of hexo-theme-Annie!</div>
+			
+		
+		
+	
+
+</div>
+			</div>
+			<div class="investment-content-list">
+				<div class="layout-share">
+	
+	
+
+		
+			
+			<!-- socialShare share -->
+			<div class="social-share"></div>
+
+<!--  css & js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+			
+		
+		
+	
+</div>
+
+
+			</div>
+		</div>	
+	</div>
+	</div>
+</div>
+
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+
+<!-- show math formula -->
+
+
+
+	 
+	<script src="/plugin/clipboard/clipboard.js"></script>
+	<script>
+		// Copy code !
+	    function codePreprocessing() {
+	        $("#article-content .highlight").each(function() {
+
+	            $(this).wrap('<div id="post-code"></div>');
+
+	        })
+
+	        $("#article-content #post-code").each(function() {
+
+	            $(this).prepend('<nav class="copy-nav"><span><i class="code-language"></i></span></nav>');
+
+	        })
+
+	        $("#article-content .copy-nav").each(function() {
+	            var temp = $(this).next().attr('class'),
+	                language = ((temp.length > 9) && (temp != null)) ? temp.substr(10) : "none"; //why 9? Need to check language?
+
+	            $(this).find('.code-language').text(language);
+
+	            $(this).append('<span class="copy-btn"><i class="fa fa-copy" aria-hidden="true"></i></span>');
+
+	        });
+	    }
+
+		function codeCopy() {
+		    $('#article-content #post-code').each(function(i) {
+		        var codeCopyId = 'codeCopy-' + i;
+
+		        var codeNode = $(this).find('.code'),
+		            copyButton = $(this).find('.copy-btn');
+
+		        codeNode.attr('id', codeCopyId);
+		        copyButton.attr('data-clipboard-target-id', codeCopyId);
+		    })
+
+		    
+			var clipboard = new ClipboardJS('.copy-btn', {
+					target: function(trigger) {
+						return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+					}
+		      	});
+
+			//pure js
+			function showTooltip(elem, msg) {		   
+				elem.setAttribute('aria-label', msg);
+				elem.setAttribute('class', 'copy-btn copy-status');
+				setTimeout(function() {
+					elem.setAttribute('class', 'copy-btn');
+				}, 2000);
+			}
+
+			clipboard.on('success', function(e) {
+			    e.clearSelection();
+			    console.info('Action:', e.action);		   
+			    console.info('Trigger:', e.trigger);
+			    showTooltip(e.trigger, 'Copied!');
+			    
+			});
+			clipboard.on('error', function(e) {
+			    console.error('Action:', e.action);
+			    console.error('Trigger:', e.trigger);
+			});
+		
+
+		}
+
+		if ($('.layout-post').length) {
+		    codePreprocessing();
+		    codeCopy();
+		} 
+	</script>
+
+
+
+
+
+<link rel="stylesheet" href="/plugin/fancybox/jquery.fancybox.css">
+<script src="/plugin/fancybox/jquery.fancybox.js"></script>
+
+<script type="text/javascript">
+	var titleID = $('.article-title a'),
+		imageID = $('.article-content img'),
+		videoID = $('.article-content video');
+
+	var postTitle = titleID.text() ? titleID.text() : "No post title!";
+
+	imageID.each(function() {
+		var imgPath = $(this).attr('src'),
+			imgTitle = $(this).attr('alt') ? $(this).attr('alt') : "No image description!";
+
+		//给每个匹配的<img>元素打包, 即添加父元素<a>
+		$(this).wrap('<a data-fancybox="gallery" data-caption=" 《 ' + postTitle + ' 》 ' + imgTitle + ' "  href=" ' + imgPath + ' "> </a>');
+	});
+
+	videoID.each(function() {
+		var videoPath = $(this).attr('src');
+
+		//给每个匹配的<img>元素打包, 即添加父元素<a>
+		$(this).wrap('<a data-fancybox href=" ' + videoPath + ' "> </a>');
+	});
+	//TODO：支持html5 video
+
+	if($('#layout-post').length) {
+		$('[data-fancybox="gallery"]').fancybox({
+			loop: true,
+			buttons: [
+				"zoom",
+				"share",
+				"slideShow",
+				"fullScreen",
+				//"download",
+				"thumbs",
+				"close"
+			],
+			protect: false
+		});
+	}
+</script>
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div class="social">
+		<ul>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-github"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-weibo"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-pinterest"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-instagram"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-twitter"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<i class="fa fa-rss"></i>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+		
+	<div class="copyright">
+		<p>
+			 
+				&copy;2018 - 2019, content by zccon. All Rights Reserved.
+			
+			
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+		
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+
+		<span id="busuanzi_container_page_pv">
+	  		本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+		</span>
+
+	
+
+
+
+
+		</p>
+		<p>
+			<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- set '1' to show motto in all pages! -->
+
+	<script src="/plugin/motto/motto.js"></script>
+	
+	<script type="text/javascript">
+		$(".motto").html( getMingYanContent() );
+	</script>	
+
+
+
+
+	<!--
+	时间：2018-10-3
+	描述：
+		插件名称：hexo-generator-search-zip
+		插件来源: https://github.com/SuperKieran/hexo-generator-search-zip
+		代码参考：https://github.com/SuperKieran/TKL/blob/master/layout/_partial/search.ejs(Include: js & css)	
+-->
+<div class="popup search-popup local-search-popup" >
+	<div class="local-search-container">
+		<span class="popup-btn-close">
+      		ESC
+   		</span>
+		<div class="local-search-header">
+			<div class="input-prompt">				
+			</div>
+			<input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+		</div>
+		<div class="local-search-body">
+			<div id="local-search-output"></div>
+		</div>
+		<div class="local-search-footer">
+			<div class="topN-post">				
+				
+								
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="/plugin/search/ziploader.js"></script>
+<script src="/plugin/search/search.js"></script>
+
+<script type="text/javascript">
+	var search_path = 'search.json',
+		zip_Path = '/search.zip',
+		version_Path = '/searchVersion.txt',
+		input_Trigger = 'auto',
+		top_N = '2';
+
+	themeLocalSearch({
+		search_path, 
+		zip_Path, 
+		version_Path, 
+		input_Trigger, 
+		top_N
+	});
+</script>
+
+
+<!-- love effect -->
+
+	<script src="/plugin/love/love.js"></script>
+
+
+<!-- back to top -->
+
+	
+	<div id="totop">
+  		<a href="javascript:;"  name="TOTOP" class="fa fa-arrow-up" ></a>
+	</div>
+
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+
+	
+	
+	
+	
+ 
+
+<script src="/plugin/vibrant/vibrant.js"></script>
+<script src="/plugin/chinese/chinese.js"></script>
+<script src="/plugin/imgLazyLoader/yall.min.js"></script>
+<script src="/plugin/imgResize/jquery.resizeimagetoparent.min.js"></script>
+<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/js/resizediv.js"></script>
+<script src="/js/main.js"></script>
+	</body>	
+</html>
