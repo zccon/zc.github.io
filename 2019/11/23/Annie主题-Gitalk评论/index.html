@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      安卓开发之折线图 | zccon&#39;s blog
+      Annie主题+Gitalk评论 | zccon&#39;s blog
     
   </title>
   <meta name="author" content="zccon">
@@ -168,7 +168,7 @@
 	<!-- Page title -->
 	<p>
 		
-			当前文章&nbsp;:&nbsp;《安卓开发之折线图》
+			当前文章&nbsp;:&nbsp;《Annie主题+Gitalk评论》
 		
 	</p>
 
@@ -293,8 +293,8 @@
 	<div class="article-title">
 		<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 		
-	<a href="/2019/01/21/安卓开发之折线图/" itemprop="url">
-		安卓开发之折线图
+	<a href="/2019/11/23/Annie主题-Gitalk评论/" itemprop="url">
+		Annie主题+Gitalk评论
 	</a>
 
 	</div>
@@ -307,9 +307,9 @@
 
 	发布于
 
-	<a href="/2019/01/21/安卓开发之折线图/" itemprop="url">
-		<time datetime="2019-01-21T07:38:01.000Z" itemprop="datePublished">
-	  		2019-01-21
+	<a href="/2019/11/23/Annie主题-Gitalk评论/" itemprop="url">
+		<time datetime="2019-11-23T05:21:36.000Z" itemprop="datePublished">
+	  		2019-11-23
 	  </time>
 	</a>
 	&nbsp;
@@ -325,9 +325,9 @@
 
 	更新于
 
-	<a href="/2019/01/21/安卓开发之折线图/" itemprop="url">
-		<time datetime="2019-01-21T07:38:01.000Z" itemprop="dateUpdated">
-	  		2019-11-22
+	<a href="/2019/11/23/Annie主题-Gitalk评论/" itemprop="url">
+		<time datetime="2019-11-23T05:21:36.000Z" itemprop="dateUpdated">
+	  		2019-11-23
 	  </time>
 	</a> 
 
@@ -338,16 +338,16 @@
 			<i class="fa fa-tags"></i>
 			
 	
-		<a href="/tags/Android/" class=" ">
-			Android
+		<a href="/tags/主题/" class=" ">
+			主题
 		</a>
 	
-		<a href="/tags/手机开发/" class=" ">
-			手机开发
+		<a href="/tags/Annie/" class=" ">
+			Annie
 		</a>
 	
-		<a href="/tags/line-chart/" class=" ">
-			line_chart
+		<a href="/tags/gitalk/" class=" ">
+			gitalk
 		</a>
 	
 		
@@ -356,7 +356,7 @@
 		
 
 	
-    <span class="leancloud_visitors" id="/2019/01/21/安卓开发之折线图/_visitors" data-url="/2019/01/21/安卓开发之折线图/" data-title="安卓开发之折线图">
+    <span class="leancloud_visitors" id="/2019/11/23/Annie主题-Gitalk评论/_visitors" data-url="/2019/11/23/Annie主题-Gitalk评论/" data-title="Annie主题+Gitalk评论">
        	<i class="fa fa-eye"></i>
        	热度
         <i class="leancloud_visitors_count" id="leancloud_visitors_count">0</i>
@@ -366,7 +366,7 @@
 
 
 	
-    <span class="leancloud_likes" id="/2019/01/21/安卓开发之折线图/_likes" data-url="/2019/01/21/安卓开发之折线图/" data-title="安卓开发之折线图" rel="unlike">
+    <span class="leancloud_likes" id="/2019/11/23/Annie主题-Gitalk评论/_likes" data-url="/2019/11/23/Annie主题-Gitalk评论/" data-title="Annie主题+Gitalk评论" rel="unlike">
         <i class="fa fa-heart"></i>
         喜欢
         <i class="leancloud_likes_count" id="leancloud_likes_count">0</i>
@@ -375,18 +375,112 @@
 	</div>
 
 	<div class="article-content" id="article-content">
-		<h1 id="一、新建工程Line-chart"><a href="#一、新建工程Line-chart" class="headerlink" title="一、新建工程Line_chart"></a>一、新建工程Line_chart</h1><p>勾选自动生成<code>activity_layout.xml</code>文件</p>
-<h1 id="二、添加jar包"><a href="#二、添加jar包" class="headerlink" title="二、添加jar包"></a>二、添加jar包</h1><p><code>app/src/main</code>目录下新建<code>libs</code>文件夹，加入包<code>hellocharts-library-1.5.8.jar</code><br><img src="/image/2019/01/21/添加jar包.png" alt=""></p>
-<h1 id="三、添加依赖"><a href="#三、添加依赖" class="headerlink" title="三、添加依赖"></a>三、添加依赖</h1><p>打开<code>build.gradle（app）</code>文件，在<code>dependencies{}</code>中添加依赖<br><figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">compile fileTree(dir: 'libs', include: ['*.jar'])</span><br><span class="line">androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', &#123;</span><br><span class="line">    exclude group: 'com.android.support', module: 'support-annotations'</span><br><span class="line">&#125;)</span><br><span class="line">compile 'com.android.support:appcompat-v7:25.3.1'</span><br><span class="line">testCompile 'junit:junit:4.12'</span><br><span class="line"></span><br><span class="line"><span class="addition">+ compile files('src/main/libs/hellocharts-library-1.5.8.jar')</span></span><br></pre></td></tr></table></figure></p>
-<blockquote class="colorquote warning"><p>添加完依赖之后记得点击Sync Now同步一下</p></blockquote>
-
-<h1 id="四、修改MainActivity"><a href="#四、修改MainActivity" class="headerlink" title="四、修改MainActivity"></a>四、修改MainActivity</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.example.line_chart;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> android.graphics.Color;</span><br><span class="line"><span class="keyword">import</span> android.support.v7.app.AppCompatActivity;</span><br><span class="line"><span class="keyword">import</span> android.os.Bundle;</span><br><span class="line"><span class="keyword">import</span> android.view.View;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> lecho.lib.hellocharts.gesture.ContainerScrollType;</span><br><span class="line"><span class="keyword">import</span> lecho.lib.hellocharts.gesture.ZoomType;</span><br><span class="line"><span class="keyword">import</span> lecho.lib.hellocharts.model.Axis;</span><br><span class="line"><span class="keyword">import</span> lecho.lib.hellocharts.model.AxisValue;</span><br><span class="line"><span class="keyword">import</span> lecho.lib.hellocharts.model.Line;</span><br><span class="line"><span class="keyword">import</span> lecho.lib.hellocharts.model.LineChartData;</span><br><span class="line"><span class="keyword">import</span> lecho.lib.hellocharts.model.PointValue;</span><br><span class="line"><span class="keyword">import</span> lecho.lib.hellocharts.model.ValueShape;</span><br><span class="line"><span class="keyword">import</span> lecho.lib.hellocharts.model.Viewport;</span><br><span class="line"><span class="keyword">import</span> lecho.lib.hellocharts.view.LineChartView;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> <span class="keyword">extends</span> <span class="title">AppCompatActivity</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> LineChartView lineChart;</span><br><span class="line">    String[] date = &#123;<span class="string">"10-22"</span>,<span class="string">"11-22"</span>,<span class="string">"12-22"</span>,<span class="string">"1-22"</span>,<span class="string">"6-22"</span>,<span class="string">"5-23"</span>,<span class="string">"5-22"</span>,<span class="string">"6-22"</span>,<span class="string">"5-23"</span>,<span class="string">"5-20"</span>&#125;;<span class="comment">//X轴的标注</span></span><br><span class="line">    <span class="keyword">int</span>[] score= &#123;<span class="number">50</span>,<span class="number">42</span>,<span class="number">90</span>,<span class="number">33</span>,<span class="number">10</span>,<span class="number">74</span>,<span class="number">22</span>,<span class="number">18</span>,<span class="number">79</span>,<span class="number">20</span>&#125;;<span class="comment">//图表的数据点</span></span><br><span class="line">    <span class="comment">//int[] score= &#123;0,0,0,0,0,0,0,0,0,0&#125;;</span></span><br><span class="line">    <span class="keyword">public</span> List&lt;PointValue&gt; mPointValues = <span class="keyword">new</span> ArrayList&lt;PointValue&gt;();</span><br><span class="line">    <span class="keyword">public</span> List&lt;AxisValue&gt; mAxisXValues = <span class="keyword">new</span> ArrayList&lt;AxisValue&gt;();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">        setContentView(R.layout.activity_main);</span><br><span class="line"></span><br><span class="line">        lineChart = (LineChartView) findViewById(R.id.line_chart);</span><br><span class="line"></span><br><span class="line">        getAxisXLables();<span class="comment">//获取x轴的标注</span></span><br><span class="line">        getAxisPoints();<span class="comment">//获取坐标点</span></span><br><span class="line">        initLineChart();<span class="comment">//初始化</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 设置X 轴的显示</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">getAxisXLables</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; date.length; i++) &#123;</span><br><span class="line">            mAxisXValues.add(<span class="keyword">new</span> AxisValue(i).setLabel(date[i]));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 图表的每个点的显示</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">getAxisPoints</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; score.length; i++) &#123;</span><br><span class="line">            mPointValues.add(<span class="keyword">new</span> PointValue(i, score[i]));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">initLineChart</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        Line line = <span class="keyword">new</span> Line(mPointValues).setColor(Color.parseColor(<span class="string">"#FFCD41"</span>));  <span class="comment">//折线的颜色（橙色）</span></span><br><span class="line">        List&lt;Line&gt; lines = <span class="keyword">new</span> ArrayList&lt;Line&gt;();</span><br><span class="line">        line.setShape(ValueShape.CIRCLE);<span class="comment">//折线图上每个数据点的形状  这里是圆形 （有三种 ：ValueShape.SQUARE  ValueShape.CIRCLE  ValueShape.DIAMOND）</span></span><br><span class="line">        line.setCubic(<span class="keyword">false</span>);<span class="comment">//曲线是否平滑，即是曲线还是折线</span></span><br><span class="line">        line.setFilled(<span class="keyword">false</span>);<span class="comment">//是否填充曲线的面积</span></span><br><span class="line">        line.setHasLabels(<span class="keyword">true</span>);<span class="comment">//曲线的数据坐标是否加上备注</span></span><br><span class="line">        <span class="comment">//      line.setHasLabelsOnlyForSelected(true);//点击数据坐标提示数据（设置了这个line.setHasLabels(true);就无效）</span></span><br><span class="line">        line.setHasLines(<span class="keyword">true</span>);<span class="comment">//是否用线显示。如果为false 则没有曲线只有点显示</span></span><br><span class="line">        line.setHasPoints(<span class="keyword">true</span>);<span class="comment">//是否显示圆点 如果为false 则没有原点只有点显示（每个数据点都是个大的圆点）</span></span><br><span class="line">        lines.add(line);</span><br><span class="line">        LineChartData data = <span class="keyword">new</span> LineChartData();</span><br><span class="line">        data.setLines(lines);</span><br><span class="line">        <span class="comment">//坐标轴</span></span><br><span class="line">        Axis axisX = <span class="keyword">new</span> Axis(); <span class="comment">//X轴</span></span><br><span class="line">        axisX.setHasTiltedLabels(<span class="keyword">true</span>);  <span class="comment">//X坐标轴字体是斜的显示还是直的，true是斜的显示</span></span><br><span class="line">        axisX.setTextColor(Color.GRAY);  <span class="comment">//设置字体颜色</span></span><br><span class="line">        <span class="comment">//axisX.setName("date");  //表格名称</span></span><br><span class="line">        axisX.setTextSize(<span class="number">10</span>);<span class="comment">//设置字体大小</span></span><br><span class="line">        axisX.setMaxLabelChars(<span class="number">8</span>); <span class="comment">//最多几个X轴坐标，意思就是你的缩放让X轴上数据的个数7&lt;=x&lt;=mAxisXValues.length</span></span><br><span class="line">        axisX.setValues(mAxisXValues);  <span class="comment">//填充X轴的坐标名称</span></span><br><span class="line">        data.setAxisXBottom(axisX); <span class="comment">//x 轴在底部</span></span><br><span class="line">        <span class="comment">//data.setAxisXTop(axisX);  //x 轴在顶部</span></span><br><span class="line">        axisX.setHasLines(<span class="keyword">true</span>); <span class="comment">//x 轴分割线</span></span><br><span class="line">        <span class="comment">// Y轴是根据数据的大小自动设置Y轴上限(在下面我会给出固定Y轴数据个数的解决方案)</span></span><br><span class="line">        Axis axisY = <span class="keyword">new</span> Axis();  <span class="comment">//Y轴</span></span><br><span class="line">        axisY.setName(<span class="string">""</span>);<span class="comment">//y轴标注</span></span><br><span class="line">        axisY.setTextSize(<span class="number">10</span>);<span class="comment">//设置字体大小</span></span><br><span class="line">        data.setAxisYLeft(axisY);  <span class="comment">//Y轴设置在左边</span></span><br><span class="line">        <span class="comment">//data.setAxisYRight(axisY);  //y轴设置在右边</span></span><br><span class="line">        <span class="comment">//设置行为属性，支持缩放、滑动以及平移</span></span><br><span class="line">        lineChart.setInteractive(<span class="keyword">true</span>);</span><br><span class="line">        lineChart.setZoomType(ZoomType.HORIZONTAL);</span><br><span class="line">        lineChart.setMaxZoom((<span class="keyword">float</span>) <span class="number">2</span>);<span class="comment">//最大方法比例</span></span><br><span class="line">        lineChart.setContainerScrollEnabled(<span class="keyword">true</span>, ContainerScrollType.HORIZONTAL);</span><br><span class="line">        lineChart.setLineChartData(data);</span><br><span class="line">        lineChart.setVisibility(View.VISIBLE);</span><br><span class="line">        <span class="comment">/**注：下面的7，10只是代表一个数字去类比而已</span></span><br><span class="line"><span class="comment">         * 当时是为了解决X轴固定数据个数。见（http://forum.xda-developers.com/tools/programming/library-hellocharts-charting-library-t2904456/page2）;</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        Viewport v = <span class="keyword">new</span> Viewport(lineChart.getMaximumViewport());</span><br><span class="line">        v.left = <span class="number">0</span>;</span><br><span class="line">        v.right = <span class="number">10</span>;</span><br><span class="line">        lineChart.setCurrentViewport(v);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="五、修改activity-main-xml"><a href="#五、修改activity-main-xml" class="headerlink" title="五、修改activity_main.xml"></a>五、修改activity_main.xml</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span><br><span class="line"><span class="tag">&lt;<span class="name">RelativeLayout</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xmlns:tools</span>=<span class="string">"http://schemas.android.com/tools"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:id</span>=<span class="string">"@+id/activity_main"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:paddingBottom</span>=<span class="string">"@dimen/activity_vertical_margin"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:paddingLeft</span>=<span class="string">"@dimen/activity_horizontal_margin"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:paddingRight</span>=<span class="string">"@dimen/activity_horizontal_margin"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:paddingTop</span>=<span class="string">"@dimen/activity_vertical_margin"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">tools:context</span>=<span class="string">"com.example.line_chart.MainActivity"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">     <span class="tag">&lt;<span class="name">lecho.lib.hellocharts.view.LineChartView</span></span></span><br><span class="line"><span class="tag">         <span class="attr">android:id</span>=<span class="string">"@+id/line_chart"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">android:layout_width</span>=<span class="string">"fill_parent"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">android:layout_height</span>=<span class="string">"300dp"</span>/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">RelativeLayout</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h1 id="六、运行结果"><a href="#六、运行结果" class="headerlink" title="六、运行结果"></a>六、运行结果</h1><p><img src="/image/2019/01/21/结果.png" alt=""></p>
+		<p>本文是以<code>Annie主题</code>+<code>Gitalk评论插件</code>搭建的博客评论功能，其中涉及到<code>Github仓库</code>的创建和<code>OAuth应用</code>的申请。</p>
+<h1 id="一、新建github仓库"><a href="#一、新建github仓库" class="headerlink" title="一、新建github仓库"></a>一、新建github仓库</h1><p>首先登陆个人的github,点击<code>New repository</code>创建新的仓库</p>
+<p><img src="/image/2019/11/Annie_gitalk.png" alt=""></p>
+<h1 id="二、注册OAuth应用"><a href="#二、注册OAuth应用" class="headerlink" title="二、注册OAuth应用"></a>二、注册OAuth应用</h1><p>Gitalk评论插件的授权机制依赖于<code>OAuth Application</code>，故使用Gitalk之前注册新应用。<a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">注册链接</a></p>
+<p>进入注册应用界面：</p>
+<p><img src="/image/2019/11/Annie_gitalk2.png" alt=""></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">参数</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Application name</td>
+<td style="text-align:center">应用名称(可任意填写)</td>
+<td style="text-align:center"><code>Gitalk</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Homepage URL</td>
+<td style="text-align:center">仓库地址(这里填写<code>步骤一</code>中仓库<code>Blog-Comments</code>的地址)</td>
+<td style="text-align:center"><code>https://github.com/zccon/Blog-Comments</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Application description</td>
+<td style="text-align:center">应用描述（可任意填写）</td>
+<td style="text-align:center"><code>Gitalk</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Authorization callback URL</td>
+<td style="text-align:center">博客地址（这里填写个人博客主页地址）</td>
+<td style="text-align:center"><code>https://zccon.github.io/</code></td>
+</tr>
+</tbody>
+</table>
+<h1 id="三、获取Client-ID和Client-Secret"><a href="#三、获取Client-ID和Client-Secret" class="headerlink" title="三、获取Client ID和Client Secret"></a>三、获取Client ID和Client Secret</h1><p><img src="/image/2019/11/Annie_gitalk3.png" alt=""></p>
+<h1 id="四、编辑主题配置文件"><a href="#四、编辑主题配置文件" class="headerlink" title="四、编辑主题配置文件"></a>四、编辑主题配置文件</h1><p>打开主题目录下的<code>_config.yml</code>文件，配置<code>Gitalk</code>评论插件的参数</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">comment:</span></span><br><span class="line"><span class="attr">    enable:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="attr">gitalk:</span></span><br><span class="line"><span class="attr">    enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    clientID:</span> <span class="string">'1a2...'</span> </span><br><span class="line"><span class="attr">    clientSecret:</span> <span class="string">'3cf...'</span> </span><br><span class="line"><span class="attr">    id:</span> <span class="string">location.pathname</span></span><br><span class="line"><span class="attr">    repo:</span> <span class="string">'Blog-Comments'</span></span><br><span class="line"><span class="attr">    owner:</span> <span class="string">'zccon'</span> </span><br><span class="line"><span class="attr">    admin:</span> <span class="string">'zccon'</span></span><br><span class="line"><span class="attr">    distractionFreeMode:</span> <span class="literal">true</span></span><br><span class="line">    <span class="comment">#去除 more、index.html、?query=123等格式尾部 </span></span><br><span class="line"><span class="attr">    hrefTrimend:</span> <span class="string">'#.*$,\\?.*$,index.html$'</span></span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">参数</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">comment中的enable</td>
+<td style="text-align:center">comment总开关，<code>true</code>：启用</td>
+<td style="text-align:center">true</td>
+</tr>
+<tr>
+<td style="text-align:center">gitalk中的enable</td>
+<td style="text-align:center">gitalk开关，<code>true</code>：启用</td>
+<td style="text-align:center">true</td>
+</tr>
+<tr>
+<td style="text-align:center">clientID</td>
+<td style="text-align:center"><code>步骤三</code>中获取的<code>Client ID</code></td>
+<td style="text-align:center">‘1a2…’</td>
+</tr>
+<tr>
+<td style="text-align:center">clientSecret</td>
+<td style="text-align:center"><code>步骤三</code>中获取的<code>Client Secret</code></td>
+<td style="text-align:center">‘3cf…’</td>
+</tr>
+<tr>
+<td style="text-align:center">id</td>
+<td style="text-align:center">解决“未找到相关的issue进行评论，请联系@XXX初始化创建”问题</td>
+<td style="text-align:center">location.pathname</td>
+</tr>
+<tr>
+<td style="text-align:center">repo</td>
+<td style="text-align:center"><code>步骤一</code>中创建的仓库名（issues的容器）</td>
+<td style="text-align:center">‘Blog-Comments’</td>
+</tr>
+<tr>
+<td style="text-align:center">owner</td>
+<td style="text-align:center">博客仓库的拥有者</td>
+<td style="text-align:center">‘zccon’</td>
+</tr>
+<tr>
+<td style="text-align:center">admin</td>
+<td style="text-align:center">博客仓库的管理者</td>
+<td style="text-align:center">‘zccon’</td>
+</tr>
+<tr>
+<td style="text-align:center">distractionFreeMode</td>
+<td style="text-align:center">Gitalk插件的参数（无干扰模式，<code>true</code>启用）</td>
+<td style="text-align:center">true</td>
+</tr>
+<tr>
+<td style="text-align:center">hrefTrimend</td>
+<td style="text-align:center"><code>Post url</code>处理（删除url中的#、index等字符，缩短url）</td>
+<td style="text-align:center">默认不变</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="colorquote info"><p>更多问题，请查看Gitalk评论插件的<a href="https://github.com/gitalk/gitalk/issues" target="_blank" rel="noopener">ISSUES</a></p></blockquote>
 	
 	</div>
 	
-	<div id="current-post-cover" data-scr="/img/CoverImage/Android/linechart.png"></div>
+	<div id="current-post-cover" data-scr="/img/CoverImage/Hexo/Annie_Gitalk.png"></div>
 
 	<!-- relate post, comment...-->
 	<div class="investment-container">
@@ -401,12 +495,8 @@
 	<span>
 		<a href="javascript: window.scrollTo(0, 0);">返回顶部</a>
 		
-			<a href="/2019/01/25/NavigationView头部监听事件/" title="NavigationView头部监听事件" rel="prev">
-				&laquo;上一篇
-			</a>
 		
-		
-			<a href="/2018/11/07/冬/" title="冬" rel="next">
+			<a href="/2019/11/22/Emoji表情库/" title="Emoji表情库" rel="next">
 				下一篇&raquo;
 			</a>
 			
@@ -424,32 +514,6 @@
 <div class="relate-post">
 	
 		<ul>
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2019/11/23/Annie主题-Gitalk评论/" title="Annie主题+Gitalk评论">
-								Annie主题+Gitalk评论			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								十一月 23日, 2019				
-							</p>
-							<p class="relate-post-content">
-								本文是以Annie主题+Gitalk评论插件搭建的博客评论功能，其中涉及到Github仓库的创建和OAuth应用的申请。
-一、新建github仓库首先登陆个人的github,点击New repository创建新的仓库
-
-二、注册OA...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2019/11/23/Annie主题-Gitalk评论/" title="Annie主题+Gitalk评论">				
-								
-								<img class="lazy" src="/img/CoverDefault/placeholder.jpg" data-src="/img/CoverImage/Hexo/Annie_Gitalk.png" alt="Annie主题+Gitalk评论"/>
-							</a>
-						</div>
-					</li>											
-			
 			
 					<li>
 						<div class="relate-post-text">
@@ -506,6 +570,31 @@ Bash指令
 							<a href="/2019/01/25/NavigationView头部监听事件/" title="NavigationView头部监听事件">				
 								
 								<img class="lazy" src="/img/CoverDefault/placeholder.jpg" data-src="/img/CoverImage/Android/navigationview.png" alt="NavigationView头部监听事件"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/01/21/安卓开发之折线图/" title="安卓开发之折线图">
+								安卓开发之折线图			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								一月 21日, 2019				
+							</p>
+							<p class="relate-post-content">
+								一、新建工程Line_chart勾选自动生成activity_layout.xml文件
+二、添加jar包app/src/main目录下新建libs文件夹，加入包hellocharts-library-1.5.8.jar
+三、添加依赖打...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/01/21/安卓开发之折线图/" title="安卓开发之折线图">				
+								
+								<img class="lazy" src="/img/CoverDefault/placeholder.jpg" data-src="/img/CoverImage/Android/linechart.png" alt="安卓开发之折线图"/>
 							</a>
 						</div>
 					</li>											
@@ -644,30 +733,6 @@ U2FsdGVkX19nd2Mya4lrWwZaPiAfPgW94QGsA3ZPA...
 			
 					<li>
 						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2018/10/28/转（Dialog）/" title="转（Dialog）">
-								转（Dialog）			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								十月 28日, 2018				
-							</p>
-							<p class="relate-post-content">
-								Android Dialog使用、自定义带动画的Dialog使用
-
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2018/10/28/转（Dialog）/" title="转（Dialog）">				
-								
-								<img class="lazy" src="/img/CoverDefault/placeholder.jpg" data-src="/img/CoverDefault/cart_cover1.jpg" alt="转（Dialog）"/>
-							</a>
-						</div>
-					</li>											
-			
-			
-					<li>
-						<div class="relate-post-text">
 							<a class="relate-post-title" href="/2019/11/22/Emoji表情库/" title="Emoji表情库">
 								Emoji表情库			
 							</a>
@@ -684,6 +749,40 @@ U2FsdGVkX19nd2Mya4lrWwZaPiAfPgW94QGsA3ZPA...
 							<a href="/2019/11/22/Emoji表情库/" title="Emoji表情库">				
 								
 								<img class="lazy" src="/img/CoverDefault/placeholder.jpg" data-src="/img/CoverImage/Hexo/emoji.png" alt="Emoji表情库"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2018/11/07/冬/" title="冬">
+								冬			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十一月 7日, 2018				
+							</p>
+							<p class="relate-post-content">
+								
+
+  
+  
+    嘘！密码可别读出来！
+    
+  
+
+Incorrect Password!
+No content to display!
+
+U2FsdGVkX1+7z62cvTNs8Zij72z6l4d7ywGrZi1LS...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2018/11/07/冬/" title="冬">				
+								
+								<img class="lazy" src="/img/CoverDefault/placeholder.jpg" data-src="/img/CoverImage/Life/winter.jpg" alt="冬"/>
 							</a>
 						</div>
 					</li>											
