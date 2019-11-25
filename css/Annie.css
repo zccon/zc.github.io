@@ -1615,6 +1615,7 @@ main {
 }
 .layout-page-header {
   text-align: center;
+  font-size: 1.2rem;
 }
 .layout-page-header i {
   color: #f00;
@@ -1735,8 +1736,9 @@ main {
   line-height: 2;
 }
 .article-title {
-  font-size: 2rem;
-  color: #333;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #000;
 }
 .article-title a {
   border-bottom: 0;
